@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Skybox
+  - Buildings
+  - Street
+  - Characters
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Skybox
+    uniqueID: 3504871875
+    locked: 0
+  - name: Buildings
+    uniqueID: 3466957453
+    locked: 0
+  - name: Street
+    uniqueID: 832490061
+    locked: 0
+  - name: Characters
+    uniqueID: 3393695649
     locked: 0
