@@ -744,7 +744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258941845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.058336735, y: 0.4650278, z: -10}
+  m_LocalPosition: {x: -7.14, y: -0.61497223, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1235910231}
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1791506620}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 5
@@ -848,7 +848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357164511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.058336556, y: 0.4650278, z: -10}
+  m_LocalPosition: {x: -7.14, y: -0.61497223, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 899079624}
@@ -935,6 +935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791506620}
   - component: {fileID: 1791506619}
+  - component: {fileID: 1791506621}
   m_Layer: 0
   m_Name: Robocop
   m_TagString: Untagged
@@ -999,12 +1000,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791506618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.94, y: -0.81, z: 0}
+  m_LocalPosition: {x: -1.94, y: -1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791506621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791506618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d442a9001d4d4f95ac8d1bd5c9dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2058467750
 GameObject:
   m_ObjectHideFlags: 0
