@@ -7,10 +7,14 @@ public class Movement : MonoBehaviour
 {
     public float walkingSpeed;
 
+    private Rigidbody2D rigidbody;
+    private Animator animator;
+    private Vector2 lookDirection = new Vector2(1, 0);
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -19,11 +23,14 @@ public class Movement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
 
         Vector2 movement = new Vector2(horizontal, 0.0f);
-
-        //Character movement on x and z axis
+        
         if (!Mathf.Approximately(movement.x, 0.0f))
         {
             transform.Translate(walkingSpeed * movement.normalized * Time.deltaTime, Space.World);
+            lookDirection.Set(movement.x, movement.y);
+            lookDirection.Normalize();
         }
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Speed", movement.magnitude);
     }
 }
