@@ -7,22 +7,20 @@ public class Background : MonoBehaviour
     public Animator animator;
 
     public Transform startMarker;
-    public Transform endMarkerLeft;
-    public Transform endMarkerRight;
 
     public Transform endmarker;
 
     public float speed = 1.0F;
 
+    // Total distance between the markers.
     private float journeyLength;
 
-    private float startTime;
+     private float startTime;
 
-    bool transition = false;
-
-    private void Start()
+    void Start()
     {
         startTime = Time.time;
+        endmarker = startMarker;
     }
 
     void Update()
@@ -31,19 +29,14 @@ public class Background : MonoBehaviour
 
         if(horizontal < 0)
         {
-            journeyLength = Vector2.Distance(startMarker.position, endMarkerLeft.position);
-            endmarker = endMarkerLeft;
+            endmarker.position = new Vector2(endmarker.position.x + (float).001, endmarker.position.y);
         }
-        else if (horizontal > 0)
+        else if(horizontal > 0)
         {
-            journeyLength = Vector2.Distance(startMarker.position, endMarkerRight.position);
-            endmarker = endMarkerRight;
+            endmarker.position = new Vector2(endmarker.position.x - (float).001, endmarker.position.y);
         }
-        else
-        {
-            journeyLength = Vector2.Distance(startMarker.position, startMarker.position);
-            endmarker = startMarker;
-        }
+
+        journeyLength = Vector2.Distance(startMarker.position, endmarker.position);
 
         // Distance moved equals elapsed time times speed..
         float distCovered = (Time.time - startTime) * speed;
@@ -51,7 +44,11 @@ public class Background : MonoBehaviour
         // Fraction of journey completed equals current distance divided by total distance.
         float fractionOfJourney = distCovered / journeyLength;
 
-        // Set our position as a fraction of the distance between the markers.
-        transform.position = Vector3.Lerp(startMarker.position, endmarker.position, fractionOfJourney);
+        if(startMarker.position != null && endmarker != null)
+        {
+            // Set our position as a fraction of the distance between the markers.
+            transform.position = Vector2.Lerp(startMarker.position, endmarker.position, fractionOfJourney);
+        }
+
     }
 }
