@@ -6,6 +6,15 @@ using UnityEngine.SceneManagement;
 public class MoveToOtherScene : MonoBehaviour
 {
     public Object transportScene;
+    public SpriteRenderer buttonPrompt;
+    public Animator animator;
+    public bool isExit;
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        buttonPrompt.enabled = true;
+        animator.SetBool("isExit", isExit);
+    }
 
     void OnTriggerStay2D(Collider2D other)
     {
@@ -14,5 +23,10 @@ public class MoveToOtherScene : MonoBehaviour
         {
             SceneManager.LoadScene(transportScene.name);
         }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        buttonPrompt.enabled = false;
     }
 }
