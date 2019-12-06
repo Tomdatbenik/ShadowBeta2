@@ -15,7 +15,7 @@ public class Background : MonoBehaviour
     // Total distance between the markers.
     private float journeyLength;
 
-     private float startTime;
+    private float startTime;
 
     void Start()
     {
@@ -44,11 +44,10 @@ public class Background : MonoBehaviour
         // Fraction of journey completed equals current distance divided by total distance.
         float fractionOfJourney = distCovered / journeyLength;
 
-        if(startMarker.position != null && endmarker != null)
+        if(!float.IsNaN(fractionOfJourney))
         {
             // Set our position as a fraction of the distance between the markers.
             transform.position = Vector2.Lerp(startMarker.position, endmarker.position, fractionOfJourney);
         }
-
     }
 }
