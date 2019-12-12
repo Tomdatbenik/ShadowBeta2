@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
        DisplayNextSentence();
     }
 
+
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
@@ -54,7 +55,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            PlayDialogueAudio();
+          //  PlayDialogueAudio();
             yield return null;
         }
     }
