@@ -467,79 +467,79 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1155621534}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2297860740068033571
+--- !u!1001 &6793147833703460820
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5700435720934927889, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2513691171669963996, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_Name
       value: DialogueTrigger
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7736499
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.21
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -320.40002
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2258466169762645406, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 2719658472547609366, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5073898996687945063, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 6541233732911807865, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: buttonPrompt
       value: 
       objectReference: {fileID: 1787758707}
-    - target: {fileID: 5073898996687945063, guid: 6681984a3bd66d54aa65df9c193fcfa4,
+    - target: {fileID: 6541233732911807865, guid: 6681984a3bd66d54aa65df9c193fcfa4,
         type: 3}
       propertyPath: animator
       value: 
