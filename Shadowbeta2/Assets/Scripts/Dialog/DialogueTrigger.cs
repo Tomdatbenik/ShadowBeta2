@@ -5,15 +5,38 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    #region public variables
+    /// <summary>
+    /// Diaglog ui
+    /// </summary>
     public Dialogue dialogue;
-    public SpriteRenderer buttonPrompt;
+
+    /// <summary>
+    /// Dialog animator
+    /// </summary>
     public Animator animator;
 
+    public GameObject Button;
+
+    #endregion
+
+    #region private variables
+    /// <summary>
+    /// Player button sprite renderen
+    /// </summary>
+    private SpriteRenderer ButtonSpriteRenderen;
+
+    /// <summary>
+    /// Dialoguemanager
+    /// </summary>
     private DialogueManager dialoguemanager;
+    #endregion
 
     private void Start()
     {
         dialoguemanager = FindObjectOfType<DialogueManager>();
+
+        ButtonSpriteRenderen = Button.GetComponent<SpriteRenderer>();
     }
 
     public void TriggerDialogue()
@@ -22,16 +45,14 @@ public class DialogueTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        buttonPrompt.enabled = true;
+        ButtonSpriteRenderen.enabled = true;
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
         float interact = Input.GetAxisRaw("Interact");
 
-        Debug.Log(interact);
-
-        if (Mathf.Approximately(interact,1) && buttonPrompt.enabled)
+        if(Mathf.Approximately(interact,1))
         {
             TriggerDialogue();
         }
@@ -39,9 +60,8 @@ public class DialogueTrigger : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        buttonPrompt.enabled = false;
+        ButtonSpriteRenderen.enabled = false;
         dialoguemanager.EndDialog();
 
     }
 }
-//git help

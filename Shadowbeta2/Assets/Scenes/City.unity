@@ -967,16 +967,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1070731876}
     m_Modifications:
-    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
-        type: 3}
-      propertyPath: buttonPrompt
-      value: 
-      objectReference: {fileID: 282199302}
     - target: {fileID: 2882468540093062509, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_Name
       value: Dialoguemanager
       objectReference: {fileID: 0}
+    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
+        type: 3}
+      propertyPath: buttonPrompt
+      value: 
+      objectReference: {fileID: 282199302}
+    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 1513180788}
     - target: {fileID: 3396878149835675182, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2589,6 +2594,11 @@ PrefabInstance:
       propertyPath: dialogue.interactableName
       value: Teacher
       objectReference: {fileID: 0}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 1513180788}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
 --- !u!4 &761217085 stripped
@@ -4753,6 +4763,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad3ed20a252e74d478d56ae13b9dee74, type: 3}
+--- !u!1 &1513180788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6814656705859241769, guid: de4f60d3c08918c418b1742fe84d3355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977882103}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1557936060
 GameObject:
   m_ObjectHideFlags: 0

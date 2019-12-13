@@ -11,13 +11,19 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     public AudioSource audioSource;
     [SerializeField] public AudioClip[] audioClips;
-    public SpriteRenderer buttonPrompt;
+    public GameObject Button;
+
+    private Animator ButtonAnimator;
+
+
     private Queue<string> sentences;
     
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
+
+        ButtonAnimator = Button.GetComponent<Animator>();
     }
 
     private void Update()
@@ -35,8 +41,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-       buttonPrompt.enabled = false;
        InteractableName.text = dialogue.interactableName;
+       ButtonAnimator.SetBool("IsSpace", true);
        animator.SetBool("isOpen", true);
        sentences.Clear();
 
@@ -78,7 +84,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialog()
     {
-        buttonPrompt.enabled = true;
+        ButtonAnimator.SetBool("IsSpace", false);
         animator.SetBool("isOpen", false);
     }
 
