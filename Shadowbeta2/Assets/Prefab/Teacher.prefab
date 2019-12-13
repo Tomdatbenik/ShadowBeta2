@@ -321,6 +321,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: teacherWalk
+      value: 
+      objectReference: {fileID: 1251806723300101782}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa410862b1128458790f98164d91bd, type: 3}
 --- !u!4 &1589552784202620592 stripped
