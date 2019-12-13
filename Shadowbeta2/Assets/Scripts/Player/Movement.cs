@@ -30,6 +30,7 @@ public class Movement : MonoBehaviour
             lookDirection.Set(movement.x, movement.y);
             lookDirection.Normalize();
         }
+
         animator.SetFloat("Horizontal", lookDirection.x);
         animator.SetFloat("Speed", movement.magnitude);
     }
