@@ -67,6 +67,5 @@ public class DialogueTrigger : MonoBehaviour
         teacherWalk.IsWalking = true;
         ButtonSpriteRenderen.enabled = false;
         dialoguemanager.EndDialog();
-
     }
 }

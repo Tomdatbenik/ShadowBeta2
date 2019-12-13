@@ -167,6 +167,7 @@ MonoBehaviour:
   GuessText: 
   sortingLayer: 0
   AnswerObject: {fileID: 0}
+  DefaultParent: {fileID: 0}
 --- !u!1 &7155384032595329991
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +224,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4083944795493979513, guid: df0a06397d0acd14c9c8e10f1f1b2798, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -280,8 +281,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df0a06397d0acd14c9c8e10f1f1b2798, type: 2}
+  m_sharedMaterial: {fileID: 4083944795493979513, guid: df0a06397d0acd14c9c8e10f1f1b2798,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
