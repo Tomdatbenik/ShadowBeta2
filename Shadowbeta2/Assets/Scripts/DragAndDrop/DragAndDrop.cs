@@ -10,13 +10,14 @@ public class DragAndDrop : MonoBehaviour
     public int sortingLayer;
     public GameObject AnswerObject;
 
-    private bool dragging = false;
+    private bool dragging;
     private float distance;
     private Transform defaultLocationTransform;
     private Transform hackBoxTransform;
     private int defaultSortingOrder;
     private SpriteRenderer hackBoxSpriteRenderer;
     private TextMeshPro hackBoxText;
+    private Transform answerLocationTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -58,15 +59,37 @@ public class DragAndDrop : MonoBehaviour
         dragging = false;
         hackBoxSpriteRenderer.sortingOrder = defaultSortingOrder;
         hackBoxText.sortingOrder = defaultSortingOrder + 1;
-        //TODO check if hitbox of this object is inside trigger
-        hackBoxTransform.position = defaultLocationTransform.position;
+        if (answerLocationTransform != null)
+        {
+            hackBoxTransform.position = answerLocationTransform.position;
+        }
+        else
+        {
+            hackBoxTransform.position = defaultLocationTransform.position;
+        }
     }
 
-    void OnTriggerEnter2D(Collider2D hit)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (AnswerObject != null)
+        if (other.name.Contains("HackAnswer"))
         {
-            Debug.Log("test");
+            answerLocationTransform = other.transform;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (answerLocationTransform == null && other.name.Contains("HackAnswer"))
+        {
+            answerLocationTransform = other.transform;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.name.Contains("HackAnswer"))
+        {
+            answerLocationTransform = null;
         }
     }
 }
