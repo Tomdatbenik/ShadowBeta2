@@ -5,7 +5,6 @@ using UnityEngine;
 public class ExecuteCode : MonoBehaviour
 {
     public GameObject[] answerBoxes;
-    public GameObject[] hackBoxes;
 
     private int enteredAllAnswers = 0;
     private int wrongAnswers = 0;
@@ -37,6 +36,10 @@ public class ExecuteCode : MonoBehaviour
                 }
             }
             Debug.Log("wrong answers: " + wrongAnswers);
+        }
+        else
+        {
+            Debug.Log("Not all answers answered");
         }
         enteredAllAnswers = 0;
         wrongAnswers = 0;
