@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +11,7 @@ public class DragAndDrop : MonoBehaviour
     public string GuessText;
     public int sortingLayer;
     public GameObject AnswerObject;
+    public GameObject DefaultParent;
 
     private bool dragging;
     private float distance;
@@ -44,6 +47,12 @@ public class DragAndDrop : MonoBehaviour
             Vector3 rayPoint = ray.GetPoint(distance);
             transform.position = rayPoint;
         }
+
+        if (hackBoxTransform.parent == null)
+        {
+            hackBoxTransform.parent = defaultLocationTransform;
+            hackBoxTransform.position = defaultLocationTransform.position;
+        }
     }
 
     void OnMouseDown()
@@ -59,12 +68,23 @@ public class DragAndDrop : MonoBehaviour
         dragging = false;
         hackBoxSpriteRenderer.sortingOrder = defaultSortingOrder;
         hackBoxText.sortingOrder = defaultSortingOrder + 1;
-        if (answerLocationTransform != null)
+        //If answerlocation doesn't have a child element, set current hackbox as childelement
+        if (answerLocationTransform != null && answerLocationTransform.childCount == 0)
         {
+            hackBoxTransform.parent = answerLocationTransform;
             hackBoxTransform.position = answerLocationTransform.position;
         }
-        else
+        //Else if answerlocation has child element, set this hackbox as child
+        else if (answerLocationTransform != null && answerLocationTransform.childCount > 0)
         {
+            answerLocationTransform.DetachChildren();
+            hackBoxTransform.parent = answerLocationTransform;
+            hackBoxTransform.position = answerLocationTransform.position;
+        }
+        //Else if answerLocationTransform is null set hackbox back to default location
+        else if (answerLocationTransform == null)
+        {
+            hackBoxTransform.parent = DefaultParent.transform;
             hackBoxTransform.position = defaultLocationTransform.position;
         }
     }
