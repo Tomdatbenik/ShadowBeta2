@@ -9,6 +9,8 @@ public class DialogueTrigger : MonoBehaviour
     public SpriteRenderer buttonPrompt;
     public Animator animator;
 
+    public TeacherWalk teacherWalk;
+
     private DialogueManager dialoguemanager;
 
     private void Start()
@@ -22,11 +24,13 @@ public class DialogueTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        teacherWalk.IsWalking = false;
         buttonPrompt.enabled = true;
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
+        buttonPrompt.enabled = true;
         if (Input.GetButton("Interact"))
         {
             TriggerDialogue();  
@@ -35,9 +39,8 @@ public class DialogueTrigger : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
+        teacherWalk.IsWalking = true;
         buttonPrompt.enabled = false;
         dialoguemanager.EndDialog();
-
     }
 }
-//git help
