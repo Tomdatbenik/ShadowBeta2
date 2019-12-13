@@ -17,6 +17,9 @@ public class Background : MonoBehaviour
 
     private float startTime;
 
+    public float MaxLeft;
+    public float MaxRight;
+
     void Start()
     {
         startTime = Time.time;
@@ -25,29 +28,33 @@ public class Background : MonoBehaviour
 
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-
-        if(horizontal < 0)
+        if(gameObject.transform.position.x < MaxLeft && gameObject.transform.position.x > MaxRight)
         {
-            endmarker.position = new Vector2(endmarker.position.x + (float).001, endmarker.position.y);
+            float horizontal = Input.GetAxisRaw("Horizontal");
+
+            if (horizontal < 0)
+            {
+                endmarker.position = new Vector2(endmarker.position.x + (float).001, endmarker.position.y);
+            }
+            else if (horizontal > 0)
+            {
+                endmarker.position = new Vector2(endmarker.position.x - (float).001, endmarker.position.y);
+            }
+
+            journeyLength = Vector2.Distance(startMarker.position, endmarker.position);
+
+            // Distance moved equals elapsed time times speed..
+            float distCovered = (Time.time - startTime) * speed;
+
+            // Fraction of journey completed equals current distance divided by total distance.
+            float fractionOfJourney = distCovered / journeyLength;
+
+            if (!float.IsNaN(fractionOfJourney))
+            {
+                // Set our position as a fraction of the distance between the markers.
+                transform.position = Vector2.Lerp(startMarker.position, endmarker.position, fractionOfJourney);
+            }
         }
-        else if(horizontal > 0)
-        {
-            endmarker.position = new Vector2(endmarker.position.x - (float).001, endmarker.position.y);
-        }
 
-        journeyLength = Vector2.Distance(startMarker.position, endmarker.position);
-
-        // Distance moved equals elapsed time times speed..
-        float distCovered = (Time.time - startTime) * speed;
-
-        // Fraction of journey completed equals current distance divided by total distance.
-        float fractionOfJourney = distCovered / journeyLength;
-
-        if(!float.IsNaN(fractionOfJourney))
-        {
-            // Set our position as a fraction of the distance between the markers.
-            transform.position = Vector2.Lerp(startMarker.position, endmarker.position, fractionOfJourney);
-        }
     }
 }

@@ -53,3 +53,6 @@ TagManager:
   - name: Characters
     uniqueID: 3393695649
     locked: 0
+  - name: NPC
+    uniqueID: 1340934361
+    locked: 0
