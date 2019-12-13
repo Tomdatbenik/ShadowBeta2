@@ -50,6 +50,12 @@ TagManager:
   - name: Street
     uniqueID: 832490061
     locked: 0
+  - name: Teacher
+    uniqueID: 1227583543
+    locked: 0
+  - name: Shirt
+    uniqueID: 1152850201
+    locked: 0
   - name: Characters
     uniqueID: 3393695649
     locked: 0
