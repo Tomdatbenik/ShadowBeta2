@@ -2477,7 +2477,7 @@ PrefabInstance:
     - target: {fileID: 1251806723300101784, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.52
+      value: -37.92
       objectReference: {fileID: 0}
     - target: {fileID: 1251806723300101784, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
@@ -2572,7 +2572,7 @@ PrefabInstance:
     - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
@@ -2587,7 +2587,9 @@ PrefabInstance:
     - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Test
+      value: "You need to guess the password of a woman that stays at the hotel to
+        the far left. An efficient way to\r\nguess her password, is to research her
+        personal life."
       objectReference: {fileID: 0}
     - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
@@ -2599,6 +2601,48 @@ PrefabInstance:
       propertyPath: Button
       value: 
       objectReference: {fileID: 1513180788}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "People that aren\u2019t aware of password safety, usually have a password
+        that is linked with something personal."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: So, go to the Hotel to room A113 and look for her information to crack
+        her password.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: IsWalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: MaxLeftX
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: MaxRightX
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723569311162, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9681126
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723569311162, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723569311162, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.0046724924
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
 --- !u!4 &761217085 stripped

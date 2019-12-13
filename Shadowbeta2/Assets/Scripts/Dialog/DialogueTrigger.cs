@@ -18,6 +18,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public GameObject Button;
 
+    public TeacherWalk teacherWalk;
     #endregion
 
     #region private variables
@@ -30,6 +31,7 @@ public class DialogueTrigger : MonoBehaviour
     /// Dialoguemanager
     /// </summary>
     private DialogueManager dialoguemanager;
+
     #endregion
 
     private void Start()
@@ -45,11 +47,13 @@ public class DialogueTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        teacherWalk.IsWalking = false;
         ButtonSpriteRenderen.enabled = true;
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
+        ButtonSpriteRenderen.enabled = true;
         float interact = Input.GetAxisRaw("Interact");
 
         if(Mathf.Approximately(interact,1))
@@ -60,6 +64,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
+        teacherWalk.IsWalking = true;
         ButtonSpriteRenderen.enabled = false;
         dialoguemanager.EndDialog();
 
