@@ -49,3 +49,4 @@ public class DialogueTrigger : MonoBehaviour
         TriggerDialogue();
     }
 }
+//git help
