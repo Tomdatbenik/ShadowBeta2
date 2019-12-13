@@ -7,16 +7,9 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
-    private DialogueManager dialoguemanager;
-
-    private void Start()
-    {
-        dialoguemanager = FindObjectOfType<DialogueManager>();
-    }
-
     public void TriggerDialogue()
     {
-        dialoguemanager.StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
     public void EnemyDamageDialogue()
@@ -52,8 +45,7 @@ public class DialogueTrigger : MonoBehaviour
     
     public void BothLostDialogue()
     {
-        buttonPrompt.enabled = false;
-        dialoguemanager.EndDialog();
-
+        dialogue = new Dialogue(new string[] {"You both are so strong! it became a draw!", "Both players fainted."});
+        TriggerDialogue();
     }
 }

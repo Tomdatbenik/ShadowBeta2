@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI InteractableName;
     public Animator animator;
     public AudioSource audioSource;
     [SerializeField] public AudioClip[] audioClips;
@@ -21,23 +20,8 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    private void Update()
-    {
-        checkNextSentence();
-    }
-
-    private void checkNextSentence()
-    {
-        
-        if (Input.GetKeyDown("space"))
-        {
-            DisplayNextSentence();
-        }
-    }
-
     public void StartDialogue(Dialogue dialogue)
     {
-       InteractableName.text = dialogue.interactableName;
        animator.SetBool("isOpen", true);
        sentences.Clear();
        talking = true;
@@ -54,13 +38,9 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            float interact = Input.GetAxisRaw("NextChat");
-            if (Mathf.Approximately(interact, 1))
-            {
-                EndDialog();
-                talking = false;
-                return;
-            }
+            EndDialog();
+            talking = false;
+            return;
         }
 
         string sentence = sentences.Dequeue();
@@ -79,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EndDialog()
+    private void EndDialog()
     {
         animator.SetBool("isOpen", false);
     }
