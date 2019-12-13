@@ -10,9 +10,16 @@ public class DialogueTrigger : MonoBehaviour
     public Animator animator;
     public bool isExit;
 
+    private DialogueManager dialoguemanager;
+
+    private void Start()
+    {
+        dialoguemanager = FindObjectOfType<DialogueManager>();
+    }
+
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        dialoguemanager.StartDialogue(dialogue);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,5 +39,7 @@ public class DialogueTrigger : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         buttonPrompt.enabled = false;
+        dialoguemanager.EndDialog();
+
     }
 }
