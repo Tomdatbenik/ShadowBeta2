@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1251806723569311163}
-  - {fileID: 5244269941178464121}
+  - {fileID: 1589552784202620592}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanTalk: 0
-  dialog: {fileID: 5736219834598549683}
+  dialog: {fileID: 0}
 --- !u!1 &1251806723569311164
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teacher: {fileID: 1251806723300101783}
---- !u!1001 &7888416767056780399
+--- !u!1001 &3724779452697523622
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.25
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
@@ -323,15 +323,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa410862b1128458790f98164d91bd, type: 3}
---- !u!1 &5736219834598549683 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
-    type: 3}
-  m_PrefabInstance: {fileID: 7888416767056780399}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5244269941178464121 stripped
+--- !u!4 &1589552784202620592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
     type: 3}
-  m_PrefabInstance: {fileID: 7888416767056780399}
+  m_PrefabInstance: {fileID: 3724779452697523622}
   m_PrefabAsset: {fileID: 0}

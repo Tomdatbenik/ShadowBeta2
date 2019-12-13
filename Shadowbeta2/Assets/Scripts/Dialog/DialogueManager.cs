@@ -12,9 +12,9 @@ public class DialogueManager : MonoBehaviour
     public AudioSource audioSource;
     [SerializeField] public AudioClip[] audioClips;
     public static bool talking;
-
+    
     private Queue<string> sentences;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,6 @@ public class DialogueManager : MonoBehaviour
 
     private void checkNextSentence()
     {
-
         if (Input.GetKeyDown("space"))
         {
             DisplayNextSentence();
@@ -37,17 +36,17 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        InteractableName.text = dialogue.interactableName;
-        animator.SetBool("isOpen", true);
-        sentences.Clear();
-        talking = true;
+       InteractableName.text = dialogue.interactableName;
+       animator.SetBool("isOpen", true);
+       sentences.Clear();
+       talking = true;
 
-        foreach (string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
+       foreach (string sentence in dialogue.sentences)
+       {
+           sentences.Enqueue(sentence);
+       }
 
-        DisplayNextSentence();
+       DisplayNextSentence();
     }
 
 
@@ -55,8 +54,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            float interact = Input.GetAxisRaw("NextChat");
-            if (Mathf.Approximately(interact, 1))
+            if (Input.GetKeyDown("space"))
             {
                 EndDialog();
                 talking = false;
@@ -75,7 +73,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            //  PlayDialogueAudio();
+          //  PlayDialogueAudio();
             yield return null;
         }
     }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2719658472547609366}
   - component: {fileID: 2279241480968741809}
-  - component: {fileID: 6541233732911807865}
+  - component: {fileID: 7916650406522529920}
   m_Layer: 0
   m_Name: DialogueTrigger
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.864378, y: 3.8796825}
   m_EdgeRadius: 0
---- !u!114 &6541233732911807865
+--- !u!114 &7916650406522529920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,13 +67,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2513691171669963996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d334caafb706c3741a74c6aa5f6ab91c, type: 3}
+  m_Script: {fileID: 11500000, guid: 58716ea4531fb6643a480a90ab27073d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences:
-    - "hoi \t"
-    - box
+    sentences: []
     interactableName: 
   buttonPrompt: {fileID: 0}
   animator: {fileID: 0}
