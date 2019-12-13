@@ -9,6 +9,7 @@ public class MoveToOtherScene : MonoBehaviour
     public SpriteRenderer buttonPrompt;
     public Animator animator;
     public bool isExit;
+    public Spawnloaction GoToLocation;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,6 +23,8 @@ public class MoveToOtherScene : MonoBehaviour
         if (Mathf.Approximately(interact, 1))
         {
             SceneManager.LoadScene(transportScene.name);
+
+            DataManager.lastLocation = GoToLocation;
         }
     }
 
