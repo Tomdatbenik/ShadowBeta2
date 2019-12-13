@@ -18,7 +18,6 @@ public class TeacherWalk : MonoBehaviour
     public float MaxRightX;
 
     public bool IsWalking;
-    public bool CanTalk;
 
     // Start is called before the first frame update
     void Start()

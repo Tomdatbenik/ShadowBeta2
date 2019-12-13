@@ -7,40 +7,61 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI InteractableName;
     public Animator animator;
     public AudioSource audioSource;
     [SerializeField] public AudioClip[] audioClips;
     public static bool talking;
-    
+
     private Queue<string> sentences;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
     }
 
+    private void Update()
+    {
+        checkNextSentence();
+    }
+
+    private void checkNextSentence()
+    {
+
+        if (Input.GetKeyDown("space"))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
-       animator.SetBool("isOpen", true);
-       sentences.Clear();
-       talking = true;
+        InteractableName.text = dialogue.interactableName;
+        animator.SetBool("isOpen", true);
+        sentences.Clear();
+        talking = true;
 
-       foreach (string sentence in dialogue.sentences)
-       {
-           sentences.Enqueue(sentence);
-       }
+        foreach (string sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
 
-       DisplayNextSentence();
+        DisplayNextSentence();
     }
+
 
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
         {
-            EndDialog();
-            talking = false;
-            return;
+            float interact = Input.GetAxisRaw("NextChat");
+            if (Mathf.Approximately(interact, 1))
+            {
+                EndDialog();
+                talking = false;
+                return;
+            }
         }
 
         string sentence = sentences.Dequeue();
@@ -54,12 +75,12 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            PlayDialogueAudio();
+            //  PlayDialogueAudio();
             yield return null;
         }
     }
 
-    private void EndDialog()
+    public void EndDialog()
     {
         animator.SetBool("isOpen", false);
     }
