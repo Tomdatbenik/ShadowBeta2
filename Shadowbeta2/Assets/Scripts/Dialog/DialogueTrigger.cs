@@ -29,7 +29,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (Input.GetButton("Interact"))
         {
-            TriggerDialogue();
+            TriggerDialogue();  
         }
     }
 
