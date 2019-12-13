@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pc.unity
     guid: bff63b2d0be727341a558b57d2c55d1d
+  - enabled: 1
+    path: Assets/Scenes/GuessingPuzzle.unity
+    guid: 08aee517c8a8d0c4aac7a6cbc7f26def
+  - enabled: 1
+    path: Assets/Scenes/Alley.unity
+    guid: 47fa3b00a67a96d4f8b2f2ba63893905
+  - enabled: 1
+    path: Assets/Scenes/CyberCafe.unity
+    guid: 60b8f64b0475cbe4e83ed8366c17fb65
   m_configObjects: {}
