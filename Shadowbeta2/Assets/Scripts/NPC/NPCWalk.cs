@@ -12,6 +12,11 @@ public class NPCWalk : MonoBehaviour
 
     private float Walking = 0;
 
+    public int WalkChance;
+
+    public float MaxLeftX;
+    public float MaxRightX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +35,11 @@ public class NPCWalk : MonoBehaviour
         {
             if (movement.x > 0)
             {
-                transform.Translate(walkingSpeed * new Vector2(transform.position.x + 1f, 0f )* Time.deltaTime, Space.World);
+                transform.Translate(walkingSpeed * new Vector2(1f, 0f )* Time.deltaTime, Space.World);
             }
             else
             {   
-                transform.Translate(walkingSpeed * new Vector2(transform.position.x - 1f, 0f) * Time.deltaTime, Space.World);
+                transform.Translate(walkingSpeed * new Vector2(-1f , 0f) * Time.deltaTime, Space.World);
             }
            
             lookDirection.Set(movement.x, movement.y);
@@ -47,9 +52,24 @@ public class NPCWalk : MonoBehaviour
 
     private float GetRandomFloat()
     {
-        int random = Random.Range(0, 100);
+        if(transform.position.x < MaxLeftX)
+        {
+            if(Walking < 0)
+            {
+                Walking = 0;
+            }   
+        }
 
-        if(Walking != 0)
+        if (transform.position.x > MaxRightX)
+        {
+            if(Walking > 0)
+            {
+                Walking = 0;
+            }
+        }
+
+
+        if (Walking != 0)
         {
             if(Walking < 0)
             {
@@ -62,7 +82,10 @@ public class NPCWalk : MonoBehaviour
             return Walking;
         }
 
-        if(random > 97)
+
+        int random = Random.Range(0, 101);
+
+        if (random > (100 - WalkChance))
         {
             Walking = Random.Range(-500, 501);
             return Walking;
