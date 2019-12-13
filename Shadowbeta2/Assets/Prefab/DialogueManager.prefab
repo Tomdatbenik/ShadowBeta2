@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3396878149835675182}
   - component: {fileID: -331538705787215483}
   m_Layer: 5
-  m_Name: Dialoguemanager
+  m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,10 @@ MonoBehaviour:
   InteractableName: {fileID: 3396878149816771268}
   animator: {fileID: 2826725422754484861}
   audioSource: {fileID: 7873089874556438763}
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: d954db997f8c3a34198bd4d1315368d5, type: 3}
+  - {fileID: 8300000, guid: 15ee34ac288eb534c91e71e029163dde, type: 3}
+  - {fileID: 8300000, guid: 647724f86f69f9e4f9ed602b913f0e8b, type: 3}
 --- !u!1 &3020351801846668053
 GameObject:
   m_ObjectHideFlags: 0

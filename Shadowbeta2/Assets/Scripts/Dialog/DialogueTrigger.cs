@@ -27,9 +27,13 @@ public class DialogueTrigger : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetButton("Interact"))
+        float interact = Input.GetAxisRaw("Interact");
+
+        Debug.Log(interact);
+
+        if (Mathf.Approximately(interact,1) && buttonPrompt.enabled)
         {
-            TriggerDialogue();  
+            TriggerDialogue();
         }
     }
 
