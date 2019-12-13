@@ -32,6 +32,12 @@ public class SpawnManager : MonoBehaviour
             case Spawnloaction.INSIDEOLDLADY:
                 player.transform.position = DataManager.InsideOldLady;
                 break;
+            case Spawnloaction.INSIDEALLEY:
+                player.transform.position = DataManager.InsideAlley;
+                break;
+            case Spawnloaction.INSIDECYBERCAFE:
+                player.transform.position = DataManager.InsideCyberCafe;
+                break;
 
         }
 
