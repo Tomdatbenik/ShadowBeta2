@@ -13,12 +13,13 @@ public static class DataManager
     public static readonly Vector2 InsideOldLady = new Vector2(-9f, 0f);
     public static readonly Vector2 InsideCyberCafe = new Vector2(-14, -1.75f);
     public static readonly Vector2 InsideAlley = new Vector2(-7, -1.08f);
-    public static readonly Vector2 OutOfPc = new Vector2(-8.5f, -1.82f);
+    public static readonly Vector2 OutOfPc = new Vector2(8.5f, -1.82f);
+    public static readonly Vector2 StartRoom = new Vector2(0, -1.82f);
 
-    public static Spawnloaction lastLocation = Spawnloaction.PLAYERHOME;
+    public static SpawnLocation lastLocation = SpawnLocation.STARTROOM;
 }
 
-public enum Spawnloaction
+public enum SpawnLocation
 {
     PLAYERHOME,
     OLDLADY,
@@ -29,5 +30,6 @@ public enum Spawnloaction
     INSIDEOLDLADY,
     INSIDEALLEY,
     INSIDECYBERCAFE,
-    OUTOFPC
+    OUTOFPC,
+    STARTROOM
 }

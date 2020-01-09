@@ -9,41 +9,49 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        switch(DataManager.lastLocation)
+        setPlayerLocation();
+    }
+
+    private void setPlayerLocation()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log(DataManager.lastLocation);
+        switch (DataManager.lastLocation)
         {
-            case Spawnloaction.PLAYERHOME:
+            case SpawnLocation.PLAYERHOME:
                 player.transform.position = DataManager.PlayerHome;
                 break;
-            case Spawnloaction.CYBERCAFE:
+            case SpawnLocation.CYBERCAFE:
                 player.transform.position = DataManager.CyberCafe;
                 break;
-            case Spawnloaction.CLUB:
+            case SpawnLocation.CLUB:
                 player.transform.position = DataManager.Club;
                 break;
-            case Spawnloaction.ALLEY:
+            case SpawnLocation.ALLEY:
                 player.transform.position = DataManager.Alley;
                 break;
-            case Spawnloaction.SHOP:
+            case SpawnLocation.SHOP:
                 player.transform.position = DataManager.Shop;
                 break;
-            case Spawnloaction.OLDLADY:
+            case SpawnLocation.OLDLADY:
                 player.transform.position = DataManager.OldLady;
                 break;
-            case Spawnloaction.INSIDEOLDLADY:
+            case SpawnLocation.INSIDEOLDLADY:
                 player.transform.position = DataManager.InsideOldLady;
                 break;
-            case Spawnloaction.INSIDEALLEY:
+            case SpawnLocation.INSIDEALLEY:
                 player.transform.position = DataManager.InsideAlley;
                 break;
-            case Spawnloaction.INSIDECYBERCAFE:
+            case SpawnLocation.INSIDECYBERCAFE:
                 player.transform.position = DataManager.InsideCyberCafe;
                 break;
-            case Spawnloaction.OUTOFPC:
+            case SpawnLocation.OUTOFPC:
                 player.transform.position = DataManager.OutOfPc;
                 break;
-
+            case SpawnLocation.STARTROOM:
+                player.transform.position = DataManager.StartRoom;
+                break;
         }
-
     }
 
 }

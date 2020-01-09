@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -384,11 +384,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 918313164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 784bee2780b19b546ac6aaaef56b29ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 4da6bfc35475fda4b9978b7421bb47dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: acbb0b850e74e56438b335f33062d960, type: 3}
+  transportScene: {fileID: 102900000, guid: acbb0b850e74e56438b335f33062d960, type: 3}
+  buttonPrompt: {fileID: 358108198}
   animator: {fileID: 358108197}
+  isExit: 1
+  hasNoCollider: 1
+  GoToLocation: 9
 --- !u!1 &1058619586
 GameObject:
   m_ObjectHideFlags: 0
