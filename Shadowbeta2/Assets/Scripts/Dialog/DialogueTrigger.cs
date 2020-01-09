@@ -9,7 +9,7 @@ public class DialogueTrigger : MonoBehaviour
     /// <summary>
     /// Diaglog ui
     /// </summary>
-    public Dialogue dialogue;
+    public Conversation conversation;
 
     /// <summary>
     /// Dialog animator
@@ -54,11 +54,13 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        dialoguemanager.StartDialogue(dialogue);
+        dialoguemanager.StartDialogue(conversation);
     }
 
     private void endDiaglogue()
     {
+        conversation.NextTopic();
+
         dialoguemanager.EndDialog();
     }
 

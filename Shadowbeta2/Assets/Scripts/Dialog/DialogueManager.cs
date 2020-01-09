@@ -39,14 +39,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Conversation conversation)
     {
-       InteractableName.text = dialogue.interactableName;
+       InteractableName.text = conversation.Talker;
        ButtonAnimator.SetBool("IsSpace", true);
        animator.SetBool("isOpen", true);
        sentences.Clear();
 
-       foreach (string sentence in dialogue.sentences)
+       foreach (string sentence in conversation.GetTopic().Sentences)
        {
            sentences.Enqueue(sentence);
        }
