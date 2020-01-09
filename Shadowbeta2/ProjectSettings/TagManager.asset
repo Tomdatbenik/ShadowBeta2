@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Space
   - E
+  - Interactable
   layers:
   - Default
   - TransparentFX
