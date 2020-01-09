@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
   m_Name: InfoOldlady
   m_EditorClassIdentifier: 
-  Sentences: []
+  Sentences:
+  - Tom
+  - Dat
+  - Ben
+  - Ik
