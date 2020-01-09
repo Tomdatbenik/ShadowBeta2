@@ -10,7 +10,7 @@ public class MoveToOtherScene : MonoBehaviour
     public Animator animator;
     public bool isExit;
     public bool hasNoCollider;
-    public Spawnloaction GoToLocation;
+    public SpawnLocation GoToLocation;
 
     private void Start()
     {
