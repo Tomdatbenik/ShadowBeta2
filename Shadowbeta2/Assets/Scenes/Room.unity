@@ -1242,7 +1242,8 @@ MonoBehaviour:
   buttonPrompt: {fileID: 1200367536}
   animator: {fileID: 1200367538}
   isExit: 0
-  GoToLocation: 0
+  hasNoCollider: 0
+  GoToLocation: 9
 --- !u!1 &1416859241
 GameObject:
   m_ObjectHideFlags: 0
