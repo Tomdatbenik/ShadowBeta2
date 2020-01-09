@@ -11,6 +11,7 @@ public class InputPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        inputText.Select();
         if(Input.GetKeyDown(KeyCode.Return))
         {
             score = 0;
