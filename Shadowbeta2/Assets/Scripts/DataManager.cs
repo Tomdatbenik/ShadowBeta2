@@ -17,6 +17,8 @@ public static class DataManager
     public static readonly Vector2 StartRoom = new Vector2(0, -1.82f);
 
     public static SpawnLocation lastLocation = SpawnLocation.STARTROOM;
+
+
 }
 
 public enum SpawnLocation
