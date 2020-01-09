@@ -5,17 +5,29 @@ using UnityEngine;
 public class Talking : MonoBehaviour
 {
     public bool CanTalk;
+    public Quest quest;
     public GameObject dialog;
-
+    public DialogueTrigger dialogueTrigger;
     private void Start()
     {
-        if(CanTalk)
+        setTalking();
+    }
+
+    private void Update()
+    {
+        setTalking();
+    }
+
+    private void setTalking()
+    {
+        if (!quest.complete)
         {
-            dialog.SetActive(true);
+            dialogueTrigger.canTalk = CanTalk;
         }
         else
         {
-            dialog.SetActive(false);
+            dialogueTrigger.canTalk = false;
         }
     }
+
 }

@@ -10,11 +10,14 @@ public class MoveToOtherScene : MonoBehaviour
     public Animator animator;
     public bool isExit;
     public bool hasNoCollider;
-    public SpawnLocation GoToLocation;
+
+    public PlayerSpawnLocation spawnLocation;
+
+    public Spawn Spawn;
 
     private void Start()
     {
-        if(isExit)
+        if (isExit)
         {
             animator.SetBool("isExit", isExit);
         }
@@ -93,8 +96,16 @@ public class MoveToOtherScene : MonoBehaviour
 
     private void goToScene()
     {
-        DataManager.lastLocation = GoToLocation;
+        if(!spawnIsNull())
+            spawnLocation.spawn = Spawn;
         SceneManager.LoadScene(transportScene.name);
+    }
+
+    private bool spawnIsNull()
+    {
+        if (Spawn == null)
+            return true;
+        return false;
     }
 
     void OnTriggerExit2D(Collider2D other)
