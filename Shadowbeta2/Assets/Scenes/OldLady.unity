@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -870,7 +870,7 @@ RectTransform:
   m_Children:
   - {fileID: 1293219564}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 927425697}
   m_TextViewport: {fileID: 1502862710}
-  m_TextComponent: {fileID: 391678116}
+  m_TextComponent: {fileID: 0}
   m_Placeholder: {fileID: 132535926}
   m_VerticalScrollbar: {fileID: 0}
   m_VerticalScrollbarEventHandler: {fileID: 0}
@@ -1548,7 +1548,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 132535925}
-  - {fileID: 391678115}
   m_Father: {fileID: 927425695}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1712,7 +1711,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: d3295134395175b4fb286ba2f7c8997e,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: a05d6f76518aef04c9b7b2c296489b08, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1f428757d1e3b2149b878a8b8f3c6e4d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2224,7 +2223,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2042077116
 GameObject:
@@ -2252,7 +2251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042077116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.427137, y: 0.089999914, z: -0.5}
+  m_LocalPosition: {x: -5, y: -1.44, z: 0}
   m_LocalScale: {x: 0.95, y: 0.85499996, z: 0.95}
   m_Children:
   - {fileID: 1965112200}
@@ -2314,7 +2313,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 3.5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
