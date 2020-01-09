@@ -38,6 +38,9 @@ public class SpawnManager : MonoBehaviour
             case Spawnloaction.INSIDECYBERCAFE:
                 player.transform.position = DataManager.InsideCyberCafe;
                 break;
+            case Spawnloaction.OUTOFPC:
+                player.transform.position = DataManager.OutOfPc;
+                break;
 
         }
 
