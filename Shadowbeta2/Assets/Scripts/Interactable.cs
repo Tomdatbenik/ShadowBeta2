@@ -36,7 +36,6 @@ public class Interactable : MonoBehaviour
                 active = true;
             }
         }
-        Debug.Log(active);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

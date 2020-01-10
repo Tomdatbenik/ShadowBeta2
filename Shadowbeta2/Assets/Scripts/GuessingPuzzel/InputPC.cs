@@ -6,8 +6,12 @@ using TMPro;
 public class InputPC : MonoBehaviour
 {
     public TMP_InputField inputText;
+    public LaunchConfetti launchConfetti;
     int score = 0;
-    
+    public string[] good_answers;
+
+   
+
     // Update is called once per frame
     void Update()
     {
@@ -16,13 +20,16 @@ public class InputPC : MonoBehaviour
         {
             score = 0;
             string input = inputText.text;
-            if(input.Contains("Jimmy"))
+            foreach(string answer in good_answers)
             {
-                score++;
+                if(input.Contains(answer))
+                {
+                    score++;
+                }
             }
-            if(input.Contains("2018"))
+            if(score == 2)
             {
-                score++;
+                launchConfetti.ShootConfetti();
             }
             Debug.Log(score);
         }
