@@ -17,5 +17,6 @@ MonoBehaviour:
   - "Your assignment goes as follows, you have to go into this house and try to guess
     the\npassword of the lady that lives there. She is a bit old fashioned so don\u2019t
     worry about\na complicated password..."
-  - "it is very likely that her password has something to do with\nher personal life.
+  - 'it is very likely that her password has something to do with aher personal life. '
+  - "She lives in the hotel on the left side of the city, you should pay her a visit.
     That\u2019s all I have, I wish you luck!"
