@@ -7,15 +7,15 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
-    public GameObject defaultLocation;
+    public Transform defaultLocation;
     public string GuessText;
     public int sortingLayer;
-    public GameObject AnswerObject;
-    public GameObject DefaultParent;
+    public GameObject answerObject;
+    [Range(1, 2)]
+    public float percentageWidth;
 
     private bool dragging;
     private float distance;
-    private Transform defaultLocationTransform;
     private Transform hackBoxTransform;
     private int defaultSortingOrder;
     private SpriteRenderer hackBoxSpriteRenderer;
@@ -25,17 +25,15 @@ public class DragAndDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        defaultLocationTransform = defaultLocation.GetComponent<Transform>();
         hackBoxTransform = GetComponent<Transform>();
 
         hackBoxSpriteRenderer = GetComponent<SpriteRenderer>();
         defaultSortingOrder = hackBoxSpriteRenderer.sortingOrder;
-
-        //Gets first child element of the object this script is on and of that child object gets the TextMeshPro
+        
         hackBoxText = gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshPro>();
         hackBoxText.text = GuessText;
 
-        hackBoxTransform.position = defaultLocationTransform.position;
+        hackBoxTransform.position = defaultLocation.position;
     }
 
     // Update is called once per frame
@@ -50,8 +48,8 @@ public class DragAndDrop : MonoBehaviour
 
         if (hackBoxTransform.parent == null)
         {
-            hackBoxTransform.parent = defaultLocationTransform;
-            hackBoxTransform.position = defaultLocationTransform.position;
+            hackBoxTransform.parent = defaultLocation;
+            hackBoxTransform.position = defaultLocation.position;
         }
     }
 
@@ -68,25 +66,32 @@ public class DragAndDrop : MonoBehaviour
         dragging = false;
         hackBoxSpriteRenderer.sortingOrder = defaultSortingOrder;
         hackBoxText.sortingOrder = defaultSortingOrder + 1;
-        //If answerlocation doesn't have a child element, set current hackbox as childelement
+
         if (answerLocationTransform != null && answerLocationTransform.childCount == 0)
         {
-            hackBoxTransform.parent = answerLocationTransform;
-            hackBoxTransform.position = answerLocationTransform.position;
+            SetHackBoxLocation(hackBoxTransform, answerLocationTransform, percentageWidth);
         }
-        //Else if answerlocation has child element, set this hackbox as child
+
         else if (answerLocationTransform != null && answerLocationTransform.childCount > 0)
         {
+            answerLocationTransform.GetChild(0).GetComponent<Transform>().GetChild(0).GetComponent<TextMeshPro>().color = Color.white;
             answerLocationTransform.DetachChildren();
-            hackBoxTransform.parent = answerLocationTransform;
-            hackBoxTransform.position = answerLocationTransform.position;
+            SetHackBoxLocation(hackBoxTransform, answerLocationTransform, percentageWidth);
         }
-        //Else if answerLocationTransform is null set hackbox back to default location
+
         else if (answerLocationTransform == null)
         {
-            hackBoxTransform.parent = DefaultParent.transform;
-            hackBoxTransform.position = defaultLocationTransform.position;
+            SetHackBoxLocation(hackBoxTransform, defaultLocation, 1);
         }
+
+
+    }
+
+    public void SetHackBoxLocation(Transform hackbox, Transform wantedLocation, float percentage)
+    {
+        hackbox.parent = wantedLocation;
+        hackbox.position = new Vector3(wantedLocation.position.x / percentage, wantedLocation.position.y);
+        hackbox.GetChild(0).GetComponent<TextMeshPro>().color = Color.white;
     }
 
     void OnTriggerEnter2D(Collider2D other)
