@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
-  m_Name: InfoOldlady
+  m_Script: {fileID: 11500000, guid: 9b1cad378e3cf974ca166e8ec05937c6, type: 3}
+  m_Name: BruteForce
   m_EditorClassIdentifier: 
-  Sentences:
-  - Tom
-  - Dat
-  - Ben
-  - Ik
+  topicIndex: 0
+  topics:
+  - {fileID: 11400000, guid: a123329fe22c75b4e996f6f8c049c937, type: 2}
+  - {fileID: 11400000, guid: f88efffe208c0d6c187c07dd2885d9c7, type: 2}
+  Talker: Teacher

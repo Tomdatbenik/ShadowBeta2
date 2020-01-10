@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
+  m_Name: phising
+  m_EditorClassIdentifier: 
+  Sentences:
+  - "Wh-what are you looking at?! Is it because I sleep here on the street??!! It
+    didn\u2019t used to be like this, I had cash first, lot\u2019s of it, but then
+    I got tricked!"
+  - 'I got an email saying I won a million dollars and all I had to do was send my
+    bank details too them.
+
+    Biggest mistake of my life....'
+  - 'I gave them my bank details and a day later I was broke. Those bastards
+
+    deposited every single penny I had from my account.'
+  - "So kid, what I\u2019m trying to say is,  when you get an email like that, don\u2019t
+    respond. It\u2019s called PHISING and they send these kind of email to everyone..."
+  - and if you send them something back, they got bait.
+  - "Don\u2019t ever phish or get phished, don\u2019t make people miserable like me,
+    we already live in a depressing world."
+  - Now, run off, let me drink in peace!!!
