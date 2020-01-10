@@ -690,7 +690,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "main()\n{\n\twhile(\t\t\t\t)\n\t{\n\n\n\n\n\n\t\t\t\t\t;\n\n\n\n\n\n\n\n\t}\nprivate
-    void ReverseBruteForce()\n{\n\tstring guess;\n\n\n\n\n\tguess = \t\t\t\t;\n\n\n\n\n\n\n\n\n\tmatched
+    void ReverseBruteForce()\n{\n\tstring pin = randomPin();\n\n\n\n\n\t \t\t\t\t;\n\n\n\n\n\n\n\n\n\tmatched
     =\t\t\t\t;\n\n\n\n\n\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df0a06397d0acd14c9c8e10f1f1b2798, type: 2}
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_margin: {x: 61.827793, y: 317.13965, z: 1187.9039, w: 112.044716}
   m_textInfo:
     textComponent: {fileID: 477237385}
-    characterCount: 146
+    characterCount: 151
     spriteCount: 0
-    spaceCount: 69
+    spaceCount: 70
     wordCount: 9
     linkCount: 0
     lineCount: 41
@@ -862,7 +862,7 @@ PrefabInstance:
     - target: {fileID: 1178948752540001436, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 283
+      value: 205.70003
       objectReference: {fileID: 0}
     - target: {fileID: 1178948752540001436, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
@@ -972,12 +972,12 @@ PrefabInstance:
     - target: {fileID: 2141274554626951173, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
       propertyPath: m_Offset.x
-      value: 115.74332
+      value: 140.11635
       objectReference: {fileID: 0}
     - target: {fileID: 2141274554626951173, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
       propertyPath: m_Size.x
-      value: 327.24084
+      value: 375.9869
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec0ffae7d3c125142beed28df4b3899a, type: 3}
@@ -1911,7 +1911,7 @@ PrefabInstance:
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: GuessText
-      value: matched
+      value: password.Count()
       objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
@@ -2340,7 +2340,7 @@ PrefabInstance:
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: GuessText
-      value: '"guess"'
+      value: ReverseHash(pin)
       objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
@@ -2356,7 +2356,7 @@ PrefabInstance:
         type: 3}
       propertyPath: answerObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 711558065}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: minusWidth
@@ -3064,7 +3064,7 @@ PrefabInstance:
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: GuessText
-      value: true
+      value: isReversed()
       objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
@@ -3090,7 +3090,7 @@ PrefabInstance:
         type: 3}
       propertyPath: answerObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1860116733}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: minusWidth
@@ -3528,7 +3528,7 @@ PrefabInstance:
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: GuessText
-      value: BruteForce()
+      value: BruteForce(pin)
       objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
@@ -3549,7 +3549,7 @@ PrefabInstance:
         type: 3}
       propertyPath: answerObject
       value: 
-      objectReference: {fileID: 711558065}
+      objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: minusWidth
@@ -4229,7 +4229,7 @@ PrefabInstance:
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: GuessText
-      value: BruteForce()
+      value: '"username"'
       objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
@@ -4250,7 +4250,7 @@ PrefabInstance:
         type: 3}
       propertyPath: answerObject
       value: 
-      objectReference: {fileID: 1648986622}
+      objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: minusWidth
@@ -4754,7 +4754,7 @@ PrefabInstance:
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: GuessText
-      value: notMatched
+      value: true
       objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023025, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
@@ -4785,7 +4785,7 @@ PrefabInstance:
         type: 3}
       propertyPath: answerObject
       value: 
-      objectReference: {fileID: 1931875738}
+      objectReference: {fileID: 0}
     - target: {fileID: 6796193048695023026, guid: a8fef6cd76fba694cb10b50625003804,
         type: 3}
       propertyPath: m_SortingLayerID
