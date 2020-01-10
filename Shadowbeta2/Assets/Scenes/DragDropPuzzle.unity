@@ -4466,7 +4466,7 @@ MonoBehaviour:
   - {fileID: 696581054}
   - {fileID: 1142284282}
   - {fileID: 577632257}
-  loadScene: {fileID: 102900000, guid: d9df6c79926ec044abfa9bef500fdcbc, type: 3}
+  loadScene: {fileID: 102900000, guid: 60b8f64b0475cbe4e83ed8366c17fb65, type: 3}
 --- !u!1001 &6796193048730368256
 PrefabInstance:
   m_ObjectHideFlags: 0
