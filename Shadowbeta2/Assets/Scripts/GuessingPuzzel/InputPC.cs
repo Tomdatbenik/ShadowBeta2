@@ -6,6 +6,7 @@ using TMPro;
 public class InputPC : MonoBehaviour
 {
     public TMP_InputField inputText;
+    public 
     public LaunchConfetti launchConfetti;
     int score = 0;
     public string[] good_answers;
