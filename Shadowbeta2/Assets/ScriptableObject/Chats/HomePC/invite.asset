@@ -13,11 +13,21 @@ MonoBehaviour:
   m_Name: invite
   m_EditorClassIdentifier: 
   Sentences:
-  - "Are you interested in hacking? Do you want to help other people? Then we need
-    you!\nWe are now recruiting new students for our school, this means anyone that
-    passes the entry exam\nwill be allowed at the Hackademy.\nTo help you on your
-    way with the entry exam, we have teachers scattered around this city that have\nassignments
-    for you. Those assignments will teach you different hacking related subjects.\nOnce
-    you\u2019ve spoken to our teachers, you should be able to make the exam without
-    any struggles.\nThe Hackademy is located at the far right of the city, we hope
-    to see you there!"
+  - Are you interested in hacking? Do you want to help other people? Then we need
+    you!
+  - 'We are now recruiting new students for our school, this means anyone that passes
+    the entry exam
+
+    will be allowed at the Hackademy.
+
+'
+  - 'To help you on your way with the entry exam, we have teachers scattered around
+    this city that have
+
+    assignments for you. Those assignments will teach you different hacking related
+    subjects.
+
+'
+  - "Once you\u2019ve spoken to our teachers, you should be able to make the exam
+    without any struggles.\nThe Hackademy is located at the far right of the city,
+    we hope to see you there!"

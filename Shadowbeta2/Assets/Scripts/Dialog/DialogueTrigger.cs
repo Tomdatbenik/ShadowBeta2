@@ -21,6 +21,8 @@ public class DialogueTrigger : MonoBehaviour
     public TeacherWalk teacherWalk;
 
     public bool canTalk;
+
+    public bool HasCollider;
     #endregion
 
     #region private variables
@@ -116,6 +118,17 @@ public class DialogueTrigger : MonoBehaviour
             setWalking(true);
             hideButton();
             endDiaglogue();
+        }
+    }
+
+    private void Update()
+    {
+        if(!HasCollider)
+        {
+            if(isTalking())
+            {
+                TriggerDialogue();
+            }
         }
     }
 }

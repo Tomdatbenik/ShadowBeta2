@@ -43,7 +43,10 @@ public class DialogueManager : MonoBehaviour
     {
        InteractableName.text = conversation.Talker;
        ButtonAnimator.SetBool("IsSpace", true);
-       animator.SetBool("isOpen", true);
+
+       if(animator != null)
+           animator.SetBool("isOpen", true);
+
        sentences.Clear();
 
        foreach (string sentence in conversation.GetTopic().Sentences)
@@ -85,7 +88,8 @@ public class DialogueManager : MonoBehaviour
     public void EndDialog()
     {
         ButtonAnimator.SetBool("IsSpace", false);
-        animator.SetBool("isOpen", false);
+        if (animator != null)
+            animator.SetBool("isOpen", false);
     }
 
     private void PlayDialogueAudio()
