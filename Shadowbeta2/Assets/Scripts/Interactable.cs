@@ -49,4 +49,9 @@ public class Interactable : MonoBehaviour
     {
         can_interact = true;
     }
+
+    public void DisableInteractable()
+    {
+        interactable.SetActive(false);
+    }
 }
