@@ -1106,7 +1106,7 @@ PrefabInstance:
         type: 3}
       propertyPath: conversation
       value: 
-      objectReference: {fileID: 11400000, guid: c2e3754b0dd6bd7dba5aa6c32022a910,
+      objectReference: {fileID: 11400000, guid: 234718d6febd369818dcda24ac6149d6,
         type: 2}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
@@ -2188,8 +2188,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1340934361
-  m_SortingLayer: 7
+  m_SortingLayerID: 1227583543
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2270ae8988b52cd49a09cfc6f0af494d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2357,7 +2357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693798542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.432266, y: 2.3531117, z: -0.5}
+  m_LocalPosition: {x: -5.2, y: 0.4650278, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1054659839}
@@ -2419,7 +2419,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 4.1
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
