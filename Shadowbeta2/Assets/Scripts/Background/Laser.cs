@@ -12,7 +12,6 @@ public class Laser : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(time);
         if(time > rate)
         {
             int r = Random.Range(0, 101);

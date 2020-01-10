@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public bool canTalk;
 
-    public bool HasCollider;
+    public bool HasNoCollider;
     #endregion
 
     #region private variables
@@ -123,7 +123,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if(!HasCollider)
+        if(HasNoCollider)
         {
             if(isTalking())
             {
