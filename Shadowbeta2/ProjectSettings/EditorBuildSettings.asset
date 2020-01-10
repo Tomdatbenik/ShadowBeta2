@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/City.unity
     guid: 9e0a6264f09130849954816b1142cd95
   - enabled: 0
-    path: Assets/Scenes/Arcade.unity
+    path: 
     guid: d9df6c79926ec044abfa9bef500fdcbc
   - enabled: 1
     path: Assets/Scenes/Club.unity
@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClothesShop.unity
     guid: 0173b290f14ce954fab2f7a275f1f873
+  - enabled: 1
+    path: Assets/Scenes/BruteForce.unity
+    guid: c1daf5968ceef7146920c57d443b592c
+  - enabled: 1
+    path: Assets/Scenes/ReverseBruteForce.unity
+    guid: 8e893e07be154c549811895d332394c8
   m_configObjects: {}

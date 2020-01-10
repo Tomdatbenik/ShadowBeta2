@@ -12,10 +12,14 @@ public class ExecuteCode : MonoBehaviour
     private int enteredAllAnswers = 0;
     private int wrongAnswers = 0;
 
+    public PlayerSpawnLocation playerSpawnLocation;
+    public Spawn spawn;
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        playerSpawnLocation.spawn = spawn;
     }
 
     public void OnClick()
