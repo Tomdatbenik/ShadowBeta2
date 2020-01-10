@@ -74,7 +74,6 @@ public class DragAndDrop : MonoBehaviour
 
         else if (answerLocationTransform != null && answerLocationTransform.childCount > 0)
         {
-            Debug.Log(answerLocationTransform.GetChild(0));
             answerLocationTransform.GetChild(0).GetComponent<Transform>().GetChild(0).GetComponent<TextMeshPro>().color = Color.white;
             answerLocationTransform.DetachChildren();
             SetHackBoxLocation(hackBoxTransform, answerLocationTransform, percentageWidth);

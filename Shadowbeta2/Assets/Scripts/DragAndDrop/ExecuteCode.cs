@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExecuteCode : MonoBehaviour
 {
     public GameObject[] answerBoxes;
+    public Object loadScene;
 
     private int enteredAllAnswers = 0;
     private int wrongAnswers = 0;
@@ -30,7 +32,6 @@ public class ExecuteCode : MonoBehaviour
         {
             foreach (GameObject answerBox in answerBoxes)
             {
-                //Gets DragAndDrop script of the answerbox
                 DragAndDrop controlScript = answerBox.transform.GetChild(0).GetComponent<DragAndDrop>();
                 if (controlScript.answerObject != answerBox)
                 {
@@ -43,6 +44,10 @@ public class ExecuteCode : MonoBehaviour
                 }
             }
             Debug.Log("wrong answers: " + wrongAnswers);
+            if (wrongAnswers == 0)
+            {
+                SceneManager.LoadScene(loadScene.name);
+            }
         }
         else
         {
