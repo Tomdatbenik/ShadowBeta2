@@ -781,18 +781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &1200367536 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1287148250994578334, guid: de4f60d3c08918c418b1742fe84d3355,
-    type: 3}
-  m_PrefabInstance: {fileID: 7055100153940114757}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1200367538 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5980370840766467199, guid: de4f60d3c08918c418b1742fe84d3355,
-    type: 3}
-  m_PrefabInstance: {fileID: 7055100153940114757}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224977862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,8 +1227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transportScene: {fileID: 102900000, guid: bff63b2d0be727341a558b57d2c55d1d, type: 3}
-  buttonPrompt: {fileID: 1200367536}
-  animator: {fileID: 1200367538}
+  buttonPrompt: {fileID: 1843366329}
+  animator: {fileID: 1843366328}
   isExit: 0
   hasNoCollider: 0
   spawnLocation: {fileID: 0}
@@ -1466,6 +1454,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7055100153940114757}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1843366328 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5980370840766467199, guid: de4f60d3c08918c418b1742fe84d3355,
+    type: 3}
+  m_PrefabInstance: {fileID: 7055100153940114757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1843366329 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1287148250994578334, guid: de4f60d3c08918c418b1742fe84d3355,
+    type: 3}
+  m_PrefabInstance: {fileID: 7055100153940114757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943331979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,12 +1662,12 @@ PrefabInstance:
         type: 3}
       propertyPath: buttonPrompt
       value: 
-      objectReference: {fileID: 1200367536}
+      objectReference: {fileID: 1843366329}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1200367538}
+      objectReference: {fileID: 1843366328}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: Spawn
