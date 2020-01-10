@@ -9,7 +9,40 @@ public class MoveToOtherScene : MonoBehaviour
     public SpriteRenderer buttonPrompt;
     public Animator animator;
     public bool isExit;
-    public Spawnloaction GoToLocation;
+    public bool hasNoCollider;
+
+    public PlayerSpawnLocation spawnLocation;
+
+    public Spawn Spawn;
+
+    private void Start()
+    {
+        if (isExit)
+        {
+            animator.SetBool("isExit", isExit);
+        }
+    }
+
+    private void Update()
+    {
+        if(hasNoCollider)
+        {
+            if (isExit)
+            {
+                if (isExitPressed())
+                {
+                    goToScene();
+                }
+            }
+            else
+            {
+                if (isInteractPressed())
+                {
+                    goToScene();
+                }
+            }
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,13 +52,60 @@ public class MoveToOtherScene : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
+        if(isExit)
+        {
+            if(isExitPressed())
+            {
+                goToScene();
+            }
+        }
+        else
+        {
+            if (isInteractPressed())
+            {
+                goToScene();
+            }
+        }
+    }
+
+    private bool isExitPressed()
+    {
+        float exit = Input.GetAxis("Cancel");
+        if (Mathf.Approximately(exit, 1))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private bool isInteractPressed()
+    {
         float interact = Input.GetAxisRaw("Interact");
         if (Mathf.Approximately(interact, 1))
         {
-            SceneManager.LoadScene(transportScene.name);
-
-            DataManager.lastLocation = GoToLocation;
+            return true;
         }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void goToScene()
+    {
+        if(!spawnIsNull())
+            spawnLocation.spawn = Spawn;
+        SceneManager.LoadScene(transportScene.name);
+    }
+
+    private bool spawnIsNull()
+    {
+        if (Spawn == null)
+            return true;
+        return false;
     }
 
     void OnTriggerExit2D(Collider2D other)

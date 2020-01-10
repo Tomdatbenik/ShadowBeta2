@@ -350,7 +350,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 94ae4184bd9cbeb4e9d76acb80b19208, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a76db1b5fd5abae4c8046ed38e76e9d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -384,11 +384,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 918313164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 784bee2780b19b546ac6aaaef56b29ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 4da6bfc35475fda4b9978b7421bb47dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 102900000, guid: acbb0b850e74e56438b335f33062d960, type: 3}
+  transportScene: {fileID: 102900000, guid: acbb0b850e74e56438b335f33062d960, type: 3}
+  buttonPrompt: {fileID: 358108198}
   animator: {fileID: 358108197}
+  isExit: 1
+  hasNoCollider: 1
+  spawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d, type: 2}
+  Spawn: {fileID: 11400000, guid: c3005306901460e418aa2febae0ba044, type: 2}
 --- !u!1 &1058619586
 GameObject:
   m_ObjectHideFlags: 0

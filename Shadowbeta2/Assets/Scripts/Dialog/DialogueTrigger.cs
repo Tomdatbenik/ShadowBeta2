@@ -19,6 +19,8 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject Button;
 
     public TeacherWalk teacherWalk;
+
+    public bool canTalk;
     #endregion
 
     #region private variables
@@ -36,8 +38,17 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Start()
     {
-        dialoguemanager = FindObjectOfType<DialogueManager>();
+        setDialogueManager();
+        setButtonRenderer();
+    }
 
+    private void setDialogueManager()
+    {
+        dialoguemanager = FindObjectOfType<DialogueManager>();
+    }
+
+    private void setButtonRenderer()
+    {
         ButtonSpriteRenderen = Button.GetComponent<SpriteRenderer>();
     }
 
@@ -45,27 +56,61 @@ public class DialogueTrigger : MonoBehaviour
     {
         dialoguemanager.StartDialogue(dialogue);
     }
+
+    private void endDiaglogue()
+    {
+        dialoguemanager.EndDialog();
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        teacherWalk.IsWalking = false;
-        ButtonSpriteRenderen.enabled = true;
+        if(canTalk)
+        {
+            setWalking(false);
+            showButton();
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        ButtonSpriteRenderen.enabled = true;
-        float interact = Input.GetAxisRaw("Interact");
-
-        if(Mathf.Approximately(interact,1))
+        if(canTalk)
         {
-            TriggerDialogue();
+            showButton();
+            if (isTalking())
+                TriggerDialogue();
         }
+    }
+
+    private void showButton()
+    {
+        ButtonSpriteRenderen.enabled = true;
+    }
+
+    private void hideButton()
+    {
+        ButtonSpriteRenderen.enabled = false;
+    }
+
+    private bool isTalking()
+    {
+        float interact = Input.GetAxisRaw("Interact");
+        if (Mathf.Approximately(interact, 1))
+            return true;
+        return false;
+    }
+
+    private void setWalking(bool walking)
+    {
+        teacherWalk.IsWalking = walking;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        teacherWalk.IsWalking = true;
-        ButtonSpriteRenderen.enabled = false;
-        dialoguemanager.EndDialog();
+        if(canTalk)
+        {
+            setWalking(true);
+            hideButton();
+            endDiaglogue();
+        }
     }
 }
