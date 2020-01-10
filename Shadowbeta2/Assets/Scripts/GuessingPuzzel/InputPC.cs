@@ -9,10 +9,7 @@ public class InputPC : MonoBehaviour
     public LaunchConfetti launchConfetti;
     int score = 0;
     public string[] good_answers;
-
-   
-
-    // Update is called once per frame
+    
     void Update()
     {
         inputText.Select();
@@ -27,9 +24,13 @@ public class InputPC : MonoBehaviour
                     score++;
                 }
             }
-            if(score == 2)
+            if(score != 0)
             {
                 launchConfetti.ShootConfetti();
+            }
+            if(score == 0)
+            {
+
             }
             Debug.Log(score);
         }
