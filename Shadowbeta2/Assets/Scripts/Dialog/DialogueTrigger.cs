@@ -103,7 +103,10 @@ public class DialogueTrigger : MonoBehaviour
 
     private void setWalking(bool walking)
     {
-        teacherWalk.IsWalking = walking;
+        if(teacherWalk != null)
+        {
+            teacherWalk.IsWalking = walking;
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
