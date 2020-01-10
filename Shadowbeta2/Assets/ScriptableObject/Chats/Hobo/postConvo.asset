@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
-  m_Name: FuckOff
+  m_Name: postConvo
   m_EditorClassIdentifier: 
   Sentences:
-  - Fuckk off!!
+  - "Kid, let me be, I don\u2019t want to talk about how dangerous phising is again."

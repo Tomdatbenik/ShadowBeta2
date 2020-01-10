@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
+  m_Name: OnQuestComplete
+  m_EditorClassIdentifier: 
+  Sentences:
+  - "You got into the computer I see, well done! Your score is 2, that is pretty high!
+    Do\nyou understand why you shouldn\u2019t have a password that is linked to anything
+    personal?"
+  - "Otherwise hackers online and even offline, can easily guess you password by doing
+    research on you, and you wouldn\u2019t want that would you?"

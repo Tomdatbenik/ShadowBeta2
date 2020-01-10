@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b1cad378e3cf974ca166e8ec05937c6, type: 3}
-  m_Name: OldLadyTeacher
+  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
+  m_Name: Information
   m_EditorClassIdentifier: 
-  topicIndex: 0
-  topics:
-  - {fileID: 11400000, guid: a3044eb4b79be2549b6a1da012e4e1e9, type: 2}
-  - {fileID: 11400000, guid: 0d02955265f166348b1645831480952e, type: 2}
-  Talker: Teacher
+  Sentences:
+  - "I can\u2019t help you, I also forgot my password, and I can\u2019t seem to remember
+    the hint aswell."
