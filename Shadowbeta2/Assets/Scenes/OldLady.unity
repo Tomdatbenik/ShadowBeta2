@@ -732,6 +732,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.045790017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.3759514
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa410862b1128458790f98164d91bd, type: 3}
 --- !u!4 &433372610 stripped
@@ -865,6 +880,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 1247906895}
     - target: {fileID: 3396878149835675182, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_LocalPosition.x
