@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -178,7 +178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128074545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.2, y: 0.4650278, z: 0}
+  m_LocalPosition: {x: -16.283615, y: 2.1464138, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 889093295}
@@ -240,7 +240,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 4.2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -288,7 +288,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 17.490732, y: 0.053639412}
+  m_Offset: {x: 15, y: -1.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -299,7 +299,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1577787, y: 8.283545}
+  m_Size: {x: 1.1585398, y: 8.283545}
   m_EdgeRadius: 0
 --- !u!61 &153255838
 BoxCollider2D:
@@ -314,7 +314,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -16.01948, y: 0.044115067}
+  m_Offset: {x: -15, y: -2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -708,7 +708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417415284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: -2.8, z: 0}
+  m_LocalPosition: {x: -0.39, y: -4.65, z: 0}
   m_LocalScale: {x: 1, y: 2.0875, z: 1}
   m_Children: []
   m_Father: {fileID: 153255840}
@@ -879,12 +879,12 @@ PrefabInstance:
     - target: {fileID: 4873111860085075382, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.48
+      value: -14.52
       objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075382, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.83
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075382, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
