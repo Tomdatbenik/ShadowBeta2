@@ -32,13 +32,11 @@ public class Conversation : ScriptableObject
     {
         if (topicIndex < topicCount())
         {
-            int a = topicIndex + 1;
-            if (topics[a].requiresQuestCompletion && Quest.complete)
+            if (topics[topicIndex + 1].requiresQuestCompletion && Quest.complete)
             {
                 return true;
             }
-
-            if (!topics[a].requiresQuestCompletion)
+            if (!topics[topicIndex + 1].requiresQuestCompletion)
             {
                 return true;
             }

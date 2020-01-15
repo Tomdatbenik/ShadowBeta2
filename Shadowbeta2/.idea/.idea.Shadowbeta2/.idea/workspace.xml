@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6def98cf-0597-4c21-b8e4-1b5ddf6ebad3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Cinemachine/CinemachineExamples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Cinemachine/Timeline/LegacyTimelineAPI.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/City.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OldLady.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OldLady.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/Assignment.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/Assignment.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/End.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/End.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/OldLadyTeacher.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/OldLadyTeacher.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/OnQuestComplete.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/OldLady/Teacher/OnQuestComplete.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Quests/OldLady.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Quests/OldLady.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Topic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Topic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialog/Monoloog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialog/Quest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GuessingPuzzel/InputPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GuessingPuzzel/InputPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +37,9 @@
         <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/QuestTopic.cs" />
         <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/QuestTopic.cs" />
         <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Topic.cs" />
-        <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GuessingPuzzel/InputPC.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Quest.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +109,7 @@
       <workItem from="1578563708360" duration="3050000" />
       <workItem from="1578646699714" duration="304000" />
       <workItem from="1579108748961" duration="44000" />
-      <workItem from="1579108811395" duration="2506000" />
+      <workItem from="1579108811395" duration="3559000" />
     </task>
     <servers />
   </component>
