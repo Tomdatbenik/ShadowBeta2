@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - Anyway, you did great, and I hope you get into our school! Keep it up!
+  requiresQuestCompletion: 1

@@ -7,12 +7,14 @@ public class Conversation : ScriptableObject
 {
     public int topicIndex = 0;
     public List<Topic> topics;
+    public Quest Quest;
 
     public string Talker;
 
     public void NextTopic()
     {
         if (canGoToNextTopic())
+            
             topicIndex++;
     }
 
@@ -28,8 +30,19 @@ public class Conversation : ScriptableObject
 
     private bool canGoToNextTopic()
     {
-        if (topicIndex < topicCount() - 1)
-            return true;
+        if (topicIndex < topicCount())
+        {
+            int a = topicIndex + 1;
+            if (topics[a].requiresQuestCompletion && Quest.complete)
+            {
+                return true;
+            }
+
+            if (!topics[a].requiresQuestCompletion)
+            {
+                return true;
+            }
+        }
         return false;
     }
 

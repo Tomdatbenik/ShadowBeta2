@@ -5,10 +5,26 @@ using UnityEngine;
 
 public class Quest : ScriptableObject
 {
+  
+#if UNITY_EDITOR
     private void OnEnable()
     {
-        hideFlags = HideFlags.DontUnloadUnusedAsset;
+        UnityEditor.EditorApplication.playModeStateChanged += EditorApplication_playModeStateChanged;
     }
+
+    private void OnDisable()
+    {
+        UnityEditor.EditorApplication.playModeStateChanged -= EditorApplication_playModeStateChanged;
+    }
+
+    private void EditorApplication_playModeStateChanged(UnityEditor.PlayModeStateChange state)
+    {
+        if (state == UnityEditor.PlayModeStateChange.EnteredEditMode)
+        {
+            complete = false;
+        }
+    }
+#endif
 
     public bool complete = false;
 }

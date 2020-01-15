@@ -9,6 +9,7 @@ public class InputPC : MonoBehaviour
     public LaunchConfetti launchConfetti;
     int score = 0;
     public string[] good_answers;
+    public Quest OldLadyQuest;
     
     void Update()
     {
@@ -27,6 +28,7 @@ public class InputPC : MonoBehaviour
             if(score != 0)
             {
                 launchConfetti.ShootConfetti();
+                OldLadyQuest.complete = true;
             }
             if(score == 0)
             {
