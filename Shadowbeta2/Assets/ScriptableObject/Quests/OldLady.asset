@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 643b1fd6f1de38d4cb632f6aab0c9a36, type: 3}
   m_Name: OldLady
   m_EditorClassIdentifier: 
-  complete: 1
+  QuestState: 2
