@@ -2697,6 +2697,12 @@ PrefabInstance:
       propertyPath: dialogue.interactableName
       value: Tom
       objectReference: {fileID: 0}
+    - target: {fileID: 8844970410264450846, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: cc6e1690847fc2f43bc4e3706bc4ff54,
+        type: 2}
     - target: {fileID: 3687673789437816138, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_SortingLayerID

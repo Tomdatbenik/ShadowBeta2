@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a512ec02641cbb04091596398627c728, type: 3}
+  m_Name: Assingment
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Hi, I have an assignment for you, are you ready for it?
+  - "Your assignment goes as follows, you have to go into this house and try to guess
+    the\npassword of the lady that lives there. She is a bit old fashioned so don\u2019t
+    worry about\na complicated password..."
+  - 'it is very likely that her password has something to do with her personal life. '
+  - "She lives in the hotel on the left side of the city, you should pay her a visit.
+    That\u2019s all I have, I wish you luck!"
+  assign: 1

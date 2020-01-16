@@ -15,20 +15,29 @@ public class hasQuest : MonoBehaviour
     {
         if(quest != null)
         {
+            mark.gameObject.SetActive(true);
             mark.sprite = HasQuest;
+        }
+        else
+        {
+            mark.gameObject.SetActive(false);
         }
     }
 
     private void Update()
     {
-        if(quest.QuestState == QuestState.COMPLETED)
+        if(quest != null)
         {
-            mark.sprite = QuestComplete;
-        }
+            if (quest.QuestState == QuestState.COMPLETED)
+            {
+                mark.sprite = QuestComplete;
+            }
 
-        if(quest.QuestState == QuestState.ASSIGNED)
-        {
-            mark.sprite = AcceptedQuest;
+            if (quest.QuestState == QuestState.ASSIGNED)
+            {
+                mark.sprite = AcceptedQuest;
+            }
         }
+       
     }
 }
