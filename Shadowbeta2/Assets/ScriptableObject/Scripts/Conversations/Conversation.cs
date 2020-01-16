@@ -14,8 +14,9 @@ public class Conversation : ScriptableObject
     public void NextTopic()
     {
         if (canGoToNextTopic())
-            
-            topicIndex++;
+        {
+            topicIndex++;   
+        }
     }
 
     public Topic GetTopic()
@@ -32,13 +33,13 @@ public class Conversation : ScriptableObject
     {
         if (topicIndex < topicCount())
         {
-            int a = topicIndex + 1;
-            if (topics[a].requiresQuestCompletion && Quest.complete)
+            int index = topicIndex + 1;
+            if (topics[index].requiresQuestCompletion && Quest.complete)
             {
                 return true;
             }
 
-            if (!topics[a].requiresQuestCompletion)
+            if (!topics[index].requiresQuestCompletion)
             {
                 return true;
             }
