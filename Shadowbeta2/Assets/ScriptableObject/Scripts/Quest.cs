@@ -21,10 +21,10 @@ public class Quest : ScriptableObject
     {
         if (state == UnityEditor.PlayModeStateChange.EnteredEditMode)
         {
-            complete = false;
+            QuestState = QuestState.UNASSIGNED;
         }
     }
 #endif
 
-    public bool complete = false;
+    public QuestState QuestState;
 }

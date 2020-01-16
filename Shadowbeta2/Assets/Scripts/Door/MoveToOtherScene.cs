@@ -10,6 +10,7 @@ public class MoveToOtherScene : MonoBehaviour
     public Animator animator;
     public bool isExit;
     public bool hasNoCollider;
+    public Quest quest;
 
     public PlayerSpawnLocation spawnLocation;
 
@@ -27,6 +28,14 @@ public class MoveToOtherScene : MonoBehaviour
     {
         if(hasNoCollider)
         {
+            keyPressed();
+        }
+    }
+
+    private void keyPressed()
+    {
+        if(quest == null)
+        {
             if (isExit)
             {
                 if (isExitPressed())
@@ -42,30 +51,46 @@ public class MoveToOtherScene : MonoBehaviour
                 }
             }
         }
+        else if(quest.QuestState == QuestState.COMPLETED)
+        {
+            if (isExit)
+            {
+                if (isExitPressed())
+                {
+                    goToScene();
+                }
+            }
+            else
+            {
+                if (isInteractPressed())
+                {
+                    goToScene();
+                }
+            }
+        }
+  
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        buttonPrompt.enabled = true;
+        if (quest != null)
+        {
+            if (quest.QuestState == QuestState.COMPLETED)
+            {
+                buttonPrompt.enabled = true;
+            }
+        }
+        else
+        {
+            buttonPrompt.enabled = true;
+        }
+
         animator.SetBool("isExit", isExit);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(isExit)
-        {
-            if(isExitPressed())
-            {
-                goToScene();
-            }
-        }
-        else
-        {
-            if (isInteractPressed())
-            {
-                goToScene();
-            }
-        }
+        keyPressed();
     }
 
     private bool isExitPressed()

@@ -32,7 +32,7 @@ public class Conversation : ScriptableObject
     {
         if (topicIndex < topicCount())
         {
-            if (topics[topicIndex + 1].requiresQuestCompletion && Quest.complete)
+            if (topics[topicIndex + 1].requiresQuestCompletion && (Quest.QuestState == QuestState.COMPLETED))
             {
                 return true;
             }

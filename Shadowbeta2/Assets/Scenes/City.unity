@@ -2697,6 +2697,16 @@ PrefabInstance:
       propertyPath: dialogue.interactableName
       value: Tom
       objectReference: {fileID: 0}
+    - target: {fileID: 3687673789437816138, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1340934361
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687673789437816138, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
@@ -3055,7 +3065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792924045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -64.5, y: 6.92, z: -10}
+  m_LocalPosition: {x: -57.27842, y: 6.92, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 910486064}
@@ -7087,17 +7097,17 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 7055100152434869754, guid: de4f60d3c08918c418b1742fe84d3355,
-        type: 3}
-      propertyPath: m_SleepingMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7384931229436250916, guid: de4f60d3c08918c418b1742fe84d3355,
         type: 3}
       propertyPath: DefaultSpawnLocation
       value: 
       objectReference: {fileID: 11400000, guid: 80dcb637ee54b0a4188d84b43952ea39,
         type: 2}
+    - target: {fileID: 7055100152434869754, guid: de4f60d3c08918c418b1742fe84d3355,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de4f60d3c08918c418b1742fe84d3355, type: 3}
 --- !u!1 &1993795847

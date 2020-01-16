@@ -28,7 +28,7 @@ public class InputPC : MonoBehaviour
             if(score != 0)
             {
                 launchConfetti.ShootConfetti();
-                OldLadyQuest.complete = true;
+                OldLadyQuest.QuestState = QuestState.COMPLETED;
             }
             if(score == 0)
             {
