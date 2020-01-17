@@ -7,7 +7,7 @@ public class QuestList : ScriptableObject
 {
     public List<Quest> Quests;
 
-    public List<Quest> GetQuestsState(QuestState state)
+    public List<Quest> GetQuestsByState(QuestState state)
     {
         List<Quest> ReturnList = new List<Quest>();
      
