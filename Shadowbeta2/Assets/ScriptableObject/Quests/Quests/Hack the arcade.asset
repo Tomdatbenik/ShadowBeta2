@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
-  m_Name: information
+  m_Script: {fileID: 11500000, guid: 643b1fd6f1de38d4cb632f6aab0c9a36, type: 3}
+  m_Name: Hack the arcade
   m_EditorClassIdentifier: 
-  Sentences:
-  - "Hack the shop\u2019s computer, to do this you must reverse brute force, it\u2019s
-    the same as brute\nforcing, but you have to guess the username."
+  QuestState: 2
+  Name: Hack the arcade
