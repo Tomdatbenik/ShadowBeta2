@@ -27,4 +27,5 @@ public class Quest : ScriptableObject
 #endif
 
     public QuestState QuestState;
+    public string Name;
 }
