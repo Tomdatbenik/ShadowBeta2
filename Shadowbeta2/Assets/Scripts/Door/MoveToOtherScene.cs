@@ -51,7 +51,7 @@ public class MoveToOtherScene : MonoBehaviour
                 }
             }
         }
-        else if(quest.QuestState == QuestState.COMPLETED)
+        else if(quest.QuestState == QuestState.COMPLETED || quest.QuestState == QuestState.ENDED)
         {
             if (isExit)
             {
@@ -75,7 +75,7 @@ public class MoveToOtherScene : MonoBehaviour
     {
         if (quest != null)
         {
-            if (quest.QuestState == QuestState.COMPLETED)
+            if (quest.QuestState == QuestState.COMPLETED || quest.QuestState == QuestState.ENDED)
             {
                 buttonPrompt.enabled = true;
             }

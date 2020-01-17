@@ -9,25 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
-  m_Name: invite
+  m_Script: {fileID: 11500000, guid: f892b7580112e2842bb9397565bb5707, type: 3}
+  m_Name: Invite 1
   m_EditorClassIdentifier: 
-  Sentences:
-  - Are you interested in hacking? Do you want to help other people? Then we need
-    you!
-  - 'We are now recruiting new students for our school, this means anyone that passes
-    the entry exam
-
-    will be allowed at the Hackademy.
-
-'
-  - 'To help you on your way with the entry exam, we have teachers scattered around
-    this city that have
-
-    assignments for you. Those assignments will teach you different hacking related
-    subjects.
-
-'
-  - "Once you\u2019ve spoken to our teachers, you should be able to make the exam
-    without any struggles.\nThe Hackademy is located at the far right of the city,
-    we hope to see you there!"
+  Sentences: []
+  Ended: 0
