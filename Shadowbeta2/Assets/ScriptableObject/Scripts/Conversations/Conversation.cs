@@ -67,7 +67,10 @@ public class Conversation : ScriptableObject
 
         if (isPostQuestTopic(topic))
         {
-            //Maybe assign score or something
+            if (((PostQuestTopic)topic).Ended)
+            {
+                Quest.QuestState = QuestState.ENDED;
+            }
         }
         else if (isAssignmentTopic(topic))
         {
@@ -92,12 +95,12 @@ public class Conversation : ScriptableObject
             Topic nexttopic = topics[topicIndex + 1];
             if (isPostQuestTopic(nexttopic))
             {
-                if(Quest.QuestState != QuestState.COMPLETED)
+                if(Quest.QuestState == QuestState.COMPLETED || Quest.QuestState == QuestState.ENDED)
                 {
-                    return false;
+                    return true;
                 }
 
-                return true;
+                return false;
       
             }
             else

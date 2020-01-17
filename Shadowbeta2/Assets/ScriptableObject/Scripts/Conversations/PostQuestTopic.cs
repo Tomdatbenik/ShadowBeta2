@@ -3,5 +3,5 @@
 
 public class PostQuestTopic : Topic
 {
-    
+    public bool Ended;
 }

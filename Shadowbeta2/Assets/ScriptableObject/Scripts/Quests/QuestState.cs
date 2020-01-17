@@ -6,5 +6,6 @@ public enum QuestState
 {
     COMPLETED,
     ASSIGNED,
-    UNASSIGNED
+    UNASSIGNED,
+    ENDED
 }

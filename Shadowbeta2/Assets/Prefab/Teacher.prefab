@@ -140,6 +140,7 @@ MonoBehaviour:
   HasQuest: {fileID: 21300000, guid: 1a3a469d377c9e84a99c4a0c1b8db84d, type: 3}
   QuestComplete: {fileID: 21300000, guid: 679441ab785ab354f8241a30e35b537e, type: 3}
   AcceptedQuest: {fileID: 21300000, guid: bd2fb20ed61ee0c4e8c222e21f3b0a57, type: 3}
+  EndedQuest: {fileID: 21300000, guid: 4f3ccb06e8dce7f4da438c0811ea21a3, type: 3}
 --- !u!1 &1251806723569311164
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,11 +566,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueTrigger
       objectReference: {fileID: 0}
-    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: teacherWalk
-      value: 
-      objectReference: {fileID: 1251806723300101782}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -630,6 +626,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: teacherWalk
+      value: 
+      objectReference: {fileID: 1251806723300101782}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa410862b1128458790f98164d91bd, type: 3}
 --- !u!4 &1589552784202620592 stripped

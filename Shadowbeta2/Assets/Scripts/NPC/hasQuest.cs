@@ -10,6 +10,7 @@ public class hasQuest : MonoBehaviour
     public Sprite HasQuest;
     public Sprite QuestComplete;
     public Sprite AcceptedQuest;
+    public Sprite EndedQuest;
 
     private void Start()
     {
@@ -28,16 +29,21 @@ public class hasQuest : MonoBehaviour
     {
         if(quest != null)
         {
-            if (quest.QuestState == QuestState.COMPLETED)
+            switch(quest.QuestState)
             {
-                mark.sprite = QuestComplete;
-            }
-
-            if (quest.QuestState == QuestState.ASSIGNED)
-            {
-                mark.sprite = AcceptedQuest;
+                case QuestState.COMPLETED:
+                    mark.sprite = QuestComplete;
+                    break;
+                case QuestState.ASSIGNED:
+                    mark.sprite = AcceptedQuest;
+                    break;
+                case QuestState.UNASSIGNED:
+                    mark.sprite = HasQuest;
+                    break;
+                case QuestState.ENDED:
+                    mark.sprite = EndedQuest;
+                    break;
             }
         }
-       
     }
 }
