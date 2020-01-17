@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f892b7580112e2842bb9397565bb5707, type: 3}
   m_Name: End
   m_EditorClassIdentifier: 
-  Sentences: []
+  Sentences:
+  - Good job kid!
   Ended: 0
