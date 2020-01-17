@@ -11,6 +11,14 @@ public class QuestManager : MonoBehaviour
 
     public List<GameObject> Quests;
 
+    private void Start()
+    {
+        if(QuestList.open)
+        {
+            QuestButton.Open();
+        }
+    }
+
     public void LoadQuests()
     {
         foreach(GameObject @object in Quests)

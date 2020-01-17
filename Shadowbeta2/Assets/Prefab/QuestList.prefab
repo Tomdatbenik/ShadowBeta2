@@ -732,6 +732,7 @@ MonoBehaviour:
   button: {fileID: 3571395547360357970}
   OpenSprite: {fileID: 21300000, guid: df4e981acb03bb041bf4da968850b189, type: 3}
   ClosedSprite: {fileID: 21300000, guid: 722bd7e6ec8a0bc46bf92a2bd7845815, type: 3}
+  QuestList: {fileID: 11400000, guid: 416778347c2e08248b84297338ed75ef, type: 2}
   questBox: {fileID: 3571395548866909755}
   opened: 0
 --- !u!114 &3571395548099659887
