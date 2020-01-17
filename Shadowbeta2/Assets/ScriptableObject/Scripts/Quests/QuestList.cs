@@ -6,6 +6,7 @@ using UnityEngine;
 public class QuestList : ScriptableObject
 {
     public List<Quest> Quests;
+    public bool open;
 
     public List<Quest> GetQuestsByState(QuestState state)
     {
