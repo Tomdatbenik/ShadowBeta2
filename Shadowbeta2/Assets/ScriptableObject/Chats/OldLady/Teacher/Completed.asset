@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
-  m_Name: OnQuestCompletion
+  m_Script: {fileID: 11500000, guid: f892b7580112e2842bb9397565bb5707, type: 3}
+  m_Name: Completed
   m_EditorClassIdentifier: 
   Sentences:
   - "You got into the computer I see, well done! Your score is 2, that is pretty high!
@@ -18,4 +18,3 @@ MonoBehaviour:
     personal?"
   - "Otherwise hackers online and even offline, can easily guess you password by doing
     research on you, and you wouldn\u2019t want that would you?"
-  requiresQuestCompletion: 1

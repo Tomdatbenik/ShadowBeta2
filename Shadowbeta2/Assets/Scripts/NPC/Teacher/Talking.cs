@@ -20,7 +20,7 @@ public class Talking : MonoBehaviour
 
     private void setTalking()
     {
-        if (!quest.complete)
+        if (quest.QuestState != QuestState.COMPLETED)
         {
             dialogueTrigger.canTalk = CanTalk;
         }

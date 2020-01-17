@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
-  m_Name: Assignment
+  m_Script: {fileID: 11500000, guid: a512ec02641cbb04091596398627c728, type: 3}
+  m_Name: Assingment
   m_EditorClassIdentifier: 
   Sentences:
   - Hi, I have an assignment for you, are you ready for it?
@@ -20,4 +20,4 @@ MonoBehaviour:
   - 'it is very likely that her password has something to do with her personal life. '
   - "She lives in the hotel on the left side of the city, you should pay her a visit.
     That\u2019s all I have, I wish you luck!"
-  requiresQuestCompletion: 0
+  assign: 1
