@@ -8,6 +8,7 @@ public class ExecuteCode : MonoBehaviour
 {
     public GameObject[] answerBoxes;
     public Object loadScene;
+    public int loadIndex;
 
     private int enteredAllAnswers = 0;
     private int wrongAnswers = 0;
@@ -50,7 +51,7 @@ public class ExecuteCode : MonoBehaviour
             Debug.Log("wrong answers: " + wrongAnswers);
             if (wrongAnswers == 0)
             {
-                SceneManager.LoadScene(loadScene.name);
+                SceneManager.LoadScene(loadIndex);
             }
         }
         else
