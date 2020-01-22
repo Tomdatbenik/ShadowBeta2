@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6def98cf-0597-4c21-b8e4-1b5ddf6ebad3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shadowbeta2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Cinemachine/CinemachineExamples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Cinemachine/Timeline/LegacyTimelineAPI.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/City.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/reverse-BruteForce/end.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Chats/reverse-BruteForce/end.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialog/Monoloog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialog/Quest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door/MoveToOtherScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door/MoveToOtherScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ClothesShop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ClothesShop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CyberCafe.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CyberCafe.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +17,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/599589BF-4CE2-4890-9B8A-14CBE4A2034E/b3/1a98efc9/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3232360-D51C-46C7-86DD-547E2F0B3F8B/e5/de2cb6c6/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog/DialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Interact.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/599589BF-4CE2-4890-9B8A-14CBE4A2034E/01/56d4f9e0/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Topic.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,8 +45,8 @@
         <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Topic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GuessingPuzzel/InputPC.cs" />
         <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Quest.cs" />
-        <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Door/MoveToOtherScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" />
       </list>
     </option>
   </component>
@@ -101,10 +93,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="23640">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="23640" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -125,7 +117,7 @@
       <workItem from="1578646699714" duration="304000" />
       <workItem from="1579108748961" duration="44000" />
       <workItem from="1579108811395" duration="3559000" />
-      <workItem from="1579707309399" duration="1515000" />
+      <workItem from="1579707309399" duration="2519000" />
     </task>
     <servers />
   </component>
@@ -176,6 +168,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs</url>
+          <line>55</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" initialLine="55">
+            <startOffsets>
+              <option value="950" />
+            </startOffsets>
+            <endOffsets>
+              <option value="983" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/Conversations/Conversation.cs" initialLine="23">
+            <startOffsets>
+              <option value="435" />
+            </startOffsets>
+            <endOffsets>
+              <option value="450" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

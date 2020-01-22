@@ -132,16 +132,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 1287148250994578334, guid: de4f60d3c08918c418b1742fe84d3355,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -901271647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287148250994578334, guid: de4f60d3c08918c418b1742fe84d3355,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7055100152434869753, guid: de4f60d3c08918c418b1742fe84d3355,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +186,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287148250994578334, guid: de4f60d3c08918c418b1742fe84d3355,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -901271647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287148250994578334, guid: de4f60d3c08918c418b1742fe84d3355,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7055100152434869758, guid: de4f60d3c08918c418b1742fe84d3355,
         type: 3}
@@ -924,7 +924,7 @@ MonoBehaviour:
   isExit: 0
   hasNoCollider: 0
   quest: {fileID: 0}
-  sceneIndex: 0
+  sceneIndex: 8
   spawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d, type: 2}
   Spawn: {fileID: 11400000, guid: a5313f1b9fa13f1488cc55e91a9db1bd, type: 2}
 --- !u!61 &711547496
