@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -763,32 +763,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 28591233}
     m_Modifications:
-    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogueTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 830079337}
-    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: Button
-      value: 
-      objectReference: {fileID: 244891716}
-    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: conversation
-      value: 
-      objectReference: {fileID: 11400000, guid: 57f276fe202f6bc429ca2af03af4070f,
-        type: 2}
-    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: canTalk
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -843,6 +817,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 830079337}
+    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 244891716}
+    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: conversation
+      value: 
+      objectReference: {fileID: 11400000, guid: 57f276fe202f6bc429ca2af03af4070f,
+        type: 2}
+    - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: canTalk
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
@@ -950,6 +950,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d6623e6a2a829cb4e8b1fa6e2d2378f0,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: sceneIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075383, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: m_Offset.y
@@ -1203,7 +1208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426175103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1600246, y: 1.4057636, z: -183.14844}
+  m_LocalPosition: {x: -2.8471317, y: 1.4057636, z: -183.14844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1593,11 +1598,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
-    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
-        type: 3}
-      propertyPath: Button
-      value: 
-      objectReference: {fileID: 244891716}
     - target: {fileID: 3396878149835675182, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1703,6 +1703,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 244891716}
     - target: {fileID: 5093480614423329179, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_textInfo.characterCount

@@ -787,6 +787,26 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3571395549186400681, guid: 4e1d2e60096706c4fa3c8e448ea9b592,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571395549186400681, guid: 4e1d2e60096706c4fa3c8e448ea9b592,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571395548874375859, guid: 4e1d2e60096706c4fa3c8e448ea9b592,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571395548874375859, guid: 4e1d2e60096706c4fa3c8e448ea9b592,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e1d2e60096706c4fa3c8e448ea9b592, type: 3}
 --- !u!224 &379892138 stripped
@@ -802,11 +822,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1140101732}
     m_Modifications:
-    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogueTrigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -862,20 +877,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
-      propertyPath: m_Offset.x
-      value: 0.045790017
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.3759514
+      propertyPath: m_Name
+      value: DialogueTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
@@ -898,6 +903,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c2e3754b0dd6bd7dba5aa6c32022a910,
         type: 2}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.045790017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.3759514
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa410862b1128458790f98164d91bd, type: 3}
 --- !u!4 &433372610 stripped
@@ -3096,6 +3116,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: sceneIndex
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42098b2b4cf3f2d4493c5ead49ba1591, type: 3}
 --- !u!1 &1965112199
@@ -3317,7 +3342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042077116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.102303, y: 0.089999914, z: -0.5}
+  m_LocalPosition: {x: -9.2726, y: 0.089999914, z: -0.5}
   m_LocalScale: {x: 0.95, y: 0.85499996, z: 0.95}
   m_Children:
   - {fileID: 1965112200}
