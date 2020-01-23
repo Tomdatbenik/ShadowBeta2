@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f892b7580112e2842bb9397565bb5707, type: 3}
-  m_Name: Ending
+  m_Script: {fileID: 11500000, guid: a512ec02641cbb04091596398627c728, type: 3}
+  m_Name: InformationQuest
   m_EditorClassIdentifier: 
-  Sentences: []
-  Ended: 0
+  Sentences:
+  - "Hack the shop\u2019s computer, to do this you must reverse brute force, it\u2019s
+    the same as brute\nforcing, but you have to guess the username."
+  assign: 1

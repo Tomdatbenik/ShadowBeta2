@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topicIndex: 0
   topics:
-  - {fileID: 11400000, guid: 6c986a04674b65bec9ed9cb4aa79a060, type: 2}
-  - {fileID: 11400000, guid: e3be23b9eb95d0c9bbe85fda1c75b098, type: 2}
+  - {fileID: 11400000, guid: f1a3b070c3176ed698c8d36ee0f74cfa, type: 2}
+  - {fileID: 11400000, guid: 6ae061b3650c8896abcaaf4de086d204, type: 2}
+  Quest: {fileID: 0}
   Talker: Teacher
