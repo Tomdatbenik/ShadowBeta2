@@ -1931,6 +1931,12 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3918705650078410692, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: conversation
+      value: 
+      objectReference: {fileID: 11400000, guid: 761f8e9a5b9c17d6db8b3b70969fb6d8,
+        type: 2}
     - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_textInfo.characterCount

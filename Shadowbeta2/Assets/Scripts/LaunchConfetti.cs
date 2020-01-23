@@ -6,6 +6,7 @@ public class LaunchConfetti : MonoBehaviour
 {
     public List<ParticleSystem> particles;
     public Interactable interactable;
+    public AudioSource ConfettiSound;
 
     private void Update()
     {
@@ -18,6 +19,7 @@ public class LaunchConfetti : MonoBehaviour
         interactable.DisableInteractable();
         foreach(ParticleSystem system in particles)
         {
+            ConfettiSound.Play();
             system.Play();
         }
     }
@@ -26,6 +28,7 @@ public class LaunchConfetti : MonoBehaviour
     {
         foreach (ParticleSystem system in particles)
         {
+            ConfettiSound.Play();
             system.Play();
         }
     }
