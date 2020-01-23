@@ -299,7 +299,7 @@ PrefabInstance:
     - target: {fileID: 1178948752540001436, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -357.00003
+      value: -357
       objectReference: {fileID: 0}
     - target: {fileID: 1178948752540001436, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
@@ -4666,6 +4666,7 @@ MonoBehaviour:
   playerSpawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d,
     type: 2}
   spawn: {fileID: 11400000, guid: 412e11b9cf67e164c9d7c83990044caf, type: 2}
+  quest: {fileID: 11400000, guid: 286b836c858b6732e855eedb47dbb336, type: 2}
 --- !u!114 &1856381968
 MonoBehaviour:
   m_ObjectHideFlags: 0
