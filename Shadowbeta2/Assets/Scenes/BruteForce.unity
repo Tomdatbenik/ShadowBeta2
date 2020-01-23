@@ -997,6 +997,7 @@ MonoBehaviour:
   - {fileID: 1142284282}
   - {fileID: 577632257}
   loadScene: {fileID: 102900000, guid: 0173b290f14ce954fab2f7a275f1f873, type: 3}
+  loadIndex: 7
   playerSpawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d,
     type: 2}
   spawn: {fileID: 11400000, guid: e383d619e7093014e97365db4f9b4a6b, type: 2}
@@ -2159,7 +2160,7 @@ PrefabInstance:
     - target: {fileID: 1178948752540001436, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -357
+      value: -357.00003
       objectReference: {fileID: 0}
     - target: {fileID: 1178948752540001436, guid: ec0ffae7d3c125142beed28df4b3899a,
         type: 3}

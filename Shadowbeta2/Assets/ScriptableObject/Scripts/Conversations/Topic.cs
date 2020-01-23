@@ -8,5 +8,4 @@ public class Topic : ScriptableObject
 {
     [TextArea(3, 10)]
     public List<string> Sentences;
-    public Boolean requiresQuestCompletion;
 }

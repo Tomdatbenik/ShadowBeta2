@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 public class MoveToOtherScene : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class MoveToOtherScene : MonoBehaviour
     public Animator animator;
     public bool isExit;
     public bool hasNoCollider;
+    public Quest quest;
+    public int sceneIndex;
 
     public PlayerSpawnLocation spawnLocation;
 
@@ -27,6 +31,14 @@ public class MoveToOtherScene : MonoBehaviour
     {
         if(hasNoCollider)
         {
+            keyPressed();
+        }
+    }
+
+    private void keyPressed()
+    {
+        if(quest == null)
+        {
             if (isExit)
             {
                 if (isExitPressed())
@@ -42,30 +54,46 @@ public class MoveToOtherScene : MonoBehaviour
                 }
             }
         }
+        else if(quest.QuestState == QuestState.COMPLETED || quest.QuestState == QuestState.ENDED)
+        {
+            if (isExit)
+            {
+                if (isExitPressed())
+                {
+                    goToScene();
+                }
+            }
+            else
+            {
+                if (isInteractPressed())
+                {
+                    goToScene();
+                }
+            }
+        }
+  
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        buttonPrompt.enabled = true;
+        if (quest != null)
+        {
+            if (quest.QuestState == QuestState.COMPLETED || quest.QuestState == QuestState.ENDED)
+            {
+                buttonPrompt.enabled = true;
+            }
+        }
+        else
+        {
+            buttonPrompt.enabled = true;
+        }
+
         animator.SetBool("isExit", isExit);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(isExit)
-        {
-            if(isExitPressed())
-            {
-                goToScene();
-            }
-        }
-        else
-        {
-            if (isInteractPressed())
-            {
-                goToScene();
-            }
-        }
+        keyPressed();
     }
 
     private bool isExitPressed()
@@ -96,9 +124,11 @@ public class MoveToOtherScene : MonoBehaviour
 
     private void goToScene()
     {
-        if(!spawnIsNull())
+        if (!spawnIsNull())
+        {
             spawnLocation.spawn = Spawn;
-        SceneManager.LoadScene(transportScene.name);
+        }
+        SceneManager.LoadScene(sceneIndex); 
     }
 
     private bool spawnIsNull()

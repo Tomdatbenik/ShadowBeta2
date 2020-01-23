@@ -21,4 +21,12 @@ public class LaunchConfetti : MonoBehaviour
             system.Play();
         }
     }
+
+    public void ShootConfettiLoose()
+    {
+        foreach (ParticleSystem system in particles)
+        {
+            system.Play();
+        }
+    }
 }

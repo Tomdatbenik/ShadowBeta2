@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topicIndex: 0
   topics:
-  - {fileID: 11400000, guid: 2067bc9f270bf2a64822086412a695ae, type: 2}
+  - {fileID: 11400000, guid: 28a4b20304b41884e84cc3c0730e3475, type: 2}
+  Quest: {fileID: 11400000, guid: ac98e2b01a867214ea9ad964e86bf3b3, type: 2}
   Talker: Hackademy
