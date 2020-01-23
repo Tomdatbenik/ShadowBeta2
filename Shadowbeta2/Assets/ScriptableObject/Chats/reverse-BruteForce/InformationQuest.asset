@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: InformationQuest
   m_EditorClassIdentifier: 
   Sentences:
-  - "Hack the shop\u2019s computer, to do this you must reverse brute force, it\u2019s
-    the same as brute\nforcing, but you have to guess the username."
+  - "Hack the Arcade\u2019s machine, to do this you must reverse brute force, it\u2019s
+    the same as brute\nforcing. But instead of guessing a password, you have to guess
+    the username."
   assign: 1

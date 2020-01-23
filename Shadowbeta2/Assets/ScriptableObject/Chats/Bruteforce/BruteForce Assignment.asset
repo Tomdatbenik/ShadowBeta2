@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BruteForce Assignment
   m_EditorClassIdentifier: 
   Sentences:
-  - A few students already failed to guess the password of the terminal at the arcade.
+  - A few students already failed to guess the password of the terminal at the shop.
     Therefore I will give you a hint to attack more complex passwords.
   - "When you get to the terminal, you should make a script that guesses passwords,
     don\u2019t worry about typing the code..."
@@ -21,10 +21,6 @@ MonoBehaviour:
     a code block. This is called brute forcing...
   - this technique is used to guess passwords automatically. Simple passwords will
     get brute forced easier than complex passwords.
-  - 'This is called brute forcing, this technique is used to guess passwords automatically.
-    Simple
-
-    passwords will get brute forced easier than complex passwords.'
   - 'A simple password has no special characters and no uppercase letters. For example:
     12345, qwerty, password or safe password.'
   - I hope you will learn something about hacking passwords with the help of brute
