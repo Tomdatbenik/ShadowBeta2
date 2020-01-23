@@ -14,6 +14,7 @@ public class ExecuteCode : MonoBehaviour
 
     public PlayerSpawnLocation playerSpawnLocation;
     public Spawn spawn;
+    public Quest quest;
 
 
     // Start is called before the first frame update
@@ -24,7 +25,6 @@ public class ExecuteCode : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log("clicked on button");
         foreach (GameObject answerBox in answerBoxes)
         {
             if (answerBox.transform.childCount != 0)
@@ -50,6 +50,7 @@ public class ExecuteCode : MonoBehaviour
             Debug.Log("wrong answers: " + wrongAnswers);
             if (wrongAnswers == 0)
             {
+                quest.QuestState = QuestState.COMPLETED;
                 SceneManager.LoadScene(loadScene.name);
             }
         }

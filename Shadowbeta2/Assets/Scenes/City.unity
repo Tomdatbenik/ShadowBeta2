@@ -1837,7 +1837,7 @@ PrefabInstance:
     - target: {fileID: 1251806723300101786, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_Name
-      value: Teacher
+      value: BruteForce Teacher
       objectReference: {fileID: 0}
     - target: {fileID: 1251806723300101784, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
@@ -1847,7 +1847,7 @@ PrefabInstance:
     - target: {fileID: 1251806723300101784, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 1251806723300101784, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
@@ -1894,6 +1894,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: conversation
+      value: 
+      objectReference: {fileID: 11400000, guid: 761f8e9a5b9c17d6db8b3b70969fb6d8,
+        type: 2}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 282199301}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 1513180788}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: canTalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: HasNoCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844970410264450846, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 0162472253f7de846921689c44162ad3,
+        type: 2}
     - target: {fileID: 462103206154755911, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_Mesh
@@ -1902,22 +1934,32 @@ PrefabInstance:
     - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_text
+      value: BruteForce Teacher
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302261114163668119, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
