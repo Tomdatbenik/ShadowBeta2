@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/City.unity
     guid: 9e0a6264f09130849954816b1142cd95
-  - enabled: 0
-    path: 
-    guid: d9df6c79926ec044abfa9bef500fdcbc
   - enabled: 1
     path: Assets/Scenes/Club.unity
     guid: 415e1a87d6610e5459eff8044fa2d635

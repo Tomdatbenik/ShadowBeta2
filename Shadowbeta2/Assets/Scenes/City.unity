@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -972,16 +972,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialoguemanager
       objectReference: {fileID: 0}
-    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
-        type: 3}
-      propertyPath: buttonPrompt
-      value: 
-      objectReference: {fileID: 282199302}
-    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
-        type: 3}
-      propertyPath: Button
-      value: 
-      objectReference: {fileID: 1513180788}
     - target: {fileID: 3396878149835675182, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1087,6 +1077,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
+        type: 3}
+      propertyPath: buttonPrompt
+      value: 
+      objectReference: {fileID: 282199302}
+    - target: {fileID: -331538705787215483, guid: 2412612a8232f2443bdc5e31fb5ed87c,
+        type: 3}
+      propertyPath: Button
+      value: 
+      objectReference: {fileID: 1513180788}
     - target: {fileID: 5093480614423329179, guid: 2412612a8232f2443bdc5e31fb5ed87c,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -7456,6 +7456,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: CanTalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 909899194}
+    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: cc6e1690847fc2f43bc4e3706bc4ff54,
+        type: 2}
+    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: dialogueTrigger
+      value: 
+      objectReference: {fileID: 909899196}
     - target: {fileID: 6803959049085754662, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -7511,44 +7532,6 @@ PrefabInstance:
       propertyPath: canTalk
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8844970410264450846, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: quest
-      value: 
-      objectReference: {fileID: 11400000, guid: cc6e1690847fc2f43bc4e3706bc4ff54,
-        type: 2}
-    - target: {fileID: 462103206154755911, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3918705650078410692, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: conversation
-      value: 
-      objectReference: {fileID: 11400000, guid: 4a24345b0e459fb409095772ac4fd6b3,
-        type: 2}
-    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: CanTalk
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: dialog
-      value: 
-      objectReference: {fileID: 909899194}
-    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: quest
-      value: 
-      objectReference: {fileID: 11400000, guid: cc6e1690847fc2f43bc4e3706bc4ff54,
-        type: 2}
-    - target: {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: dialogueTrigger
-      value: 
-      objectReference: {fileID: 909899196}
     - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: IsWalking
@@ -7609,6 +7592,12 @@ PrefabInstance:
       propertyPath: dialogue.interactableName
       value: Tom
       objectReference: {fileID: 0}
+    - target: {fileID: 8844970410264450846, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: cc6e1690847fc2f43bc4e3706bc4ff54,
+        type: 2}
     - target: {fileID: 3687673789437816138, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -7669,6 +7658,17 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 462103206154755911, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3918705650078410692, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: conversation
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a24345b0e459fb409095772ac4fd6b3,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 7008737897693604267, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
@@ -8027,7 +8027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792924045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.71798, y: 6.92, z: -0.5}
+  m_LocalPosition: {x: -54.3684, y: 6.92, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 910486064}
@@ -14450,9 +14450,8 @@ PrefabInstance:
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: transportScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 08aee517c8a8d0c4aac7a6cbc7f26def,
-        type: 3}
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: Spawn
@@ -14465,6 +14464,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: transportScene.m_Handle
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42098b2b4cf3f2d4493c5ead49ba1591, type: 3}
 --- !u!4 &1380371482 stripped
@@ -14659,9 +14663,8 @@ PrefabInstance:
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: transportScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 0173b290f14ce954fab2f7a275f1f873,
-        type: 3}
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: spawnLocation
@@ -14674,6 +14677,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 932ced7adb7b7c34fbee1f3c2a952b48,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: transportScene.m_Handle
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42098b2b4cf3f2d4493c5ead49ba1591, type: 3}
 --- !u!1 &1474904387
@@ -14869,9 +14877,8 @@ PrefabInstance:
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: transportScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 60b8f64b0475cbe4e83ed8366c17fb65,
-        type: 3}
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: spawnLocation
@@ -14884,6 +14891,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e5a875224decbd546b7315baabdca3d5,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: transportScene.m_Handle
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42098b2b4cf3f2d4493c5ead49ba1591, type: 3}
 --- !u!1001 &1511504320
@@ -20640,9 +20652,8 @@ PrefabInstance:
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: transportScene
-      value: 
-      objectReference: {fileID: 102900000, guid: acbb0b850e74e56438b335f33062d960,
-        type: 3}
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: GoToLocation
@@ -20758,9 +20769,8 @@ PrefabInstance:
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: transportScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 415e1a87d6610e5459eff8044fa2d635,
-        type: 3}
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: spawnLocation
@@ -20773,6 +20783,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 91e86a369d47ff94b9494e42ab70936d,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: transportScene.m_Handle
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42098b2b4cf3f2d4493c5ead49ba1591, type: 3}
 --- !u!1 &1734210242
@@ -21658,6 +21673,16 @@ PrefabInstance:
       propertyPath: canTalk
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: MaxLeftX
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: MaxRightX
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8844970410264450846, guid: e8fef732e1112a94c81d9233f3af9ead,
         type: 3}
       propertyPath: quest
@@ -21694,16 +21719,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: MaxLeftX
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
-        type: 3}
-      propertyPath: MaxRightX
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
@@ -22092,9 +22107,8 @@ PrefabInstance:
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: transportScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 47fa3b00a67a96d4f8b2f2ba63893905,
-        type: 3}
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: spawnLocation
@@ -22107,6 +22121,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 102b06a4ac5a5754a979c71ab2addec9,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: transportScene.m_Handle
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42098b2b4cf3f2d4493c5ead49ba1591, type: 3}
 --- !u!4 &2017750506 stripped

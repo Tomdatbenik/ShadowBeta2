@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ExecuteCode : MonoBehaviour
 {
     public GameObject[] answerBoxes;
-    public Object loadScene;
+    public int loadScene;
 
     private int enteredAllAnswers = 0;
     private int wrongAnswers = 0;
@@ -51,7 +51,7 @@ public class ExecuteCode : MonoBehaviour
             if (wrongAnswers == 0)
             {
                 quest.QuestState = QuestState.COMPLETED;
-                SceneManager.LoadScene(loadScene.name);
+                SceneManager.LoadScene(loadScene);
             }
         }
         else

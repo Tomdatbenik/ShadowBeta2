@@ -1159,6 +1159,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1558527214}
     m_Modifications:
+    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1213,11 +1218,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogueTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
@@ -1566,12 +1566,6 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 7384931229436250916, guid: de4f60d3c08918c418b1742fe84d3355,
-        type: 3}
-      propertyPath: DefaultSpawnLocation
-      value: 
-      objectReference: {fileID: 11400000, guid: 91e86a369d47ff94b9494e42ab70936d,
-        type: 2}
     - target: {fileID: 7055100152434869755, guid: de4f60d3c08918c418b1742fe84d3355,
         type: 3}
       propertyPath: m_Offset.y
@@ -1582,6 +1576,12 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 3.309165
       objectReference: {fileID: 0}
+    - target: {fileID: 7384931229436250916, guid: de4f60d3c08918c418b1742fe84d3355,
+        type: 3}
+      propertyPath: DefaultSpawnLocation
+      value: 
+      objectReference: {fileID: 11400000, guid: 91e86a369d47ff94b9494e42ab70936d,
+        type: 2}
     - target: {fileID: 7055100152434869754, guid: de4f60d3c08918c418b1742fe84d3355,
         type: 3}
       propertyPath: m_GravityScale
@@ -2530,12 +2530,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da6bfc35475fda4b9978b7421bb47dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transportScene: {fileID: 102900000, guid: 9e0a6264f09130849954816b1142cd95, type: 3}
+  transportScene: 1
   buttonPrompt: {fileID: 1009941133}
   animator: {fileID: 1009941131}
   isExit: 0
   hasNoCollider: 0
   quest: {fileID: 0}
+  index: 0
   spawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d, type: 2}
   Spawn: {fileID: 11400000, guid: a073c5e4252bf3f45821f5e8c9cf6084, type: 2}
 --- !u!61 &1681533005
@@ -2604,7 +2605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693798542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8552513, y: 2.3531117, z: -0.5}
+  m_LocalPosition: {x: -10.244535, y: 2.3531117, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1054659839}
