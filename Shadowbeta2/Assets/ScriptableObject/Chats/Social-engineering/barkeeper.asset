@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topicIndex: 0
   topics:
-  - {fileID: 11400000, guid: 3e69a79c938fce5d196bba21c07fd3dd, type: 2}
+  - {fileID: 11400000, guid: 74708bef145a6d047b1a9ddb29237768, type: 2}
   - {fileID: 11400000, guid: c148d81ceed58438da73f4523680d838, type: 2}
+  Quest: {fileID: 0}
   Talker: Barkeeper
