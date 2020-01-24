@@ -54,10 +54,9 @@ public class Conversation : ScriptableObject
     public Topic GetTopic()
     {
         Topic topic = topics[topicIndex];
-
-        if (Quest != null)
+        if(Quest != null)
         {
-            if(Quest.QuestState == QuestState.COMPLETED)
+            if (Quest.QuestState == QuestState.COMPLETED)
             {
                 int posttopicindex = getPostTopicIndex();
                 if (getTopicIndex(topic) < posttopicindex)
@@ -67,8 +66,7 @@ public class Conversation : ScriptableObject
                 }
             }
         }
-   
-
+       
         if (isPostQuestTopic(topic))
         {
             if (((PostQuestTopic)topic).Ended)

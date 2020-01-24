@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topicIndex: 0
   topics:
-  - {fileID: 11400000, guid: b07fbcacbf4be244dbc65bf237d5b585, type: 2}
-  - {fileID: 11400000, guid: 7a4621f3ed0571843befae07c7c60ecf, type: 2}
-  Quest: {fileID: 11400000, guid: 53871104011bc024e9348b64f479264f, type: 2}
-  Talker: Reverce bruteforce teacher
+  - {fileID: 11400000, guid: f1a3b070c3176ed698c8d36ee0f74cfa, type: 2}
+  - {fileID: 11400000, guid: 6ae061b3650c8896abcaaf4de086d204, type: 2}
+  Quest: {fileID: 11400000, guid: 286b836c858b6732e855eedb47dbb336, type: 2}
+  Talker: Teacher

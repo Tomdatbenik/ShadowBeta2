@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b1cad378e3cf974ca166e8ec05937c6, type: 3}
-  m_Name: BruteForce
+  m_Name: QuizConversation
   m_EditorClassIdentifier: 
   topicIndex: 0
   topics:
-  - {fileID: 11400000, guid: 54ebaaf39e7aa5042a3023db087ea0ca, type: 2}
-  - {fileID: 11400000, guid: bca810ca31100f24bb95157e92f41b26, type: 2}
-  Quest: {fileID: 11400000, guid: 0162472253f7de846921689c44162ad3, type: 2}
-  Talker: Bruteforce teacher
+  - {fileID: 11400000, guid: 3829f1280c3f040a4933712bccd46e79, type: 2}
+  Quest: {fileID: 0}
+  Talker: Exam teacher.

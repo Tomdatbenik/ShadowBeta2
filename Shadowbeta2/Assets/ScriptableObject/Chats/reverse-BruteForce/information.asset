@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f892b7580112e2842bb9397565bb5707, type: 3}
-  m_Name: Ending
+  m_Script: {fileID: 11500000, guid: d2d175305568028469ad84a38fe651b1, type: 3}
+  m_Name: information
   m_EditorClassIdentifier: 
   Sentences:
-  - "Well done! I hope you understand now that you shouldn\u2019t never have a simple
-    password, otherwise you can easily brute force that! Good luck on your next assignment!"
-  Ended: 1
+  - "Hack the shop\u2019s computer, to do this you must reverse brute force, it\u2019s
+    the same as brute\nforcing, but you have to guess the username."

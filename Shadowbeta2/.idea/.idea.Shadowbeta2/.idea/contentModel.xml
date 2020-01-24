@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Mario\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Mario\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Shadowbeta2.-997842640.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Mario\Dev\ShadowBeta2\ShadowBeta2" t="IncludeRecursive">
+    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Shadowbeta2.591955654.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -14,8 +14,8 @@
               <e p="Editor" t="Include">
                 <e p="Editors" t="Include">
                   <e p="CinemachineBasicMultiChannelPerlinEditor.cs" t="Include" />
-                  <e p="CinemachineBlenderSettingsEditor.cs" t="Include" />
                   <e p="CinemachineBlendListCameraEditor.cs" t="Include" />
+                  <e p="CinemachineBlenderSettingsEditor.cs" t="Include" />
                   <e p="CinemachineBrainEditor.cs" t="Include" />
                   <e p="CinemachineClearShotEditor.cs" t="Include" />
                   <e p="CinemachineColliderEditor.cs" t="Include" />
@@ -29,8 +29,8 @@
                   <e p="CinemachineHardLookAtEditor.cs" t="Include" />
                   <e p="CinemachineMixingCameraEditor.cs" t="Include" />
                   <e p="CinemachineOrbitalTransposerEditor.cs" t="Include" />
-                  <e p="CinemachinePathEditor.cs" t="Include" />
                   <e p="CinemachinePOVEditor.cs" t="Include" />
+                  <e p="CinemachinePathEditor.cs" t="Include" />
                   <e p="CinemachineScreenComposerGuides.cs" t="Include" />
                   <e p="CinemachineSmoothPathEditor.cs" t="Include" />
                   <e p="CinemachineStateDrivenCameraEditor.cs" t="Include" />
@@ -77,8 +77,8 @@
                   <e p="CinemachineMixingCamera.cs" t="Include" />
                   <e p="CinemachinePath.cs" t="Include" />
                   <e p="CinemachinePipeline.cs" t="Include" />
-                  <e p="CinemachineSmoother.cs" t="Include" />
                   <e p="CinemachineSmoothPath.cs" t="Include" />
+                  <e p="CinemachineSmoother.cs" t="Include" />
                   <e p="CinemachineStateDrivenCamera.cs" t="Include" />
                   <e p="CinemachineTargetGroup.cs" t="Include" />
                   <e p="CinemachineVirtualCamera.cs" t="Include" />
@@ -142,24 +142,16 @@
         <e p="ScriptableObject" t="Include">
           <e p="Scripts" t="Include">
             <e p="Conversations" t="Include">
-              <e p="AssignmentTopic.cs" t="Include" />
               <e p="Conversation.cs" t="Include" />
-              <e p="PostQuestTopic.cs" t="Include" />
               <e p="Topic.cs" t="Include" />
             </e>
-            <e p="Player" t="Include">
-              <e p="PlayerSpawnLocation.cs" t="Include" />
-              <e p="Spawn.cs" t="Include" />
-            </e>
-            <e p="Quests" t="Include">
-              <e p="Quest.cs" t="Include" />
-              <e p="QuestList.cs" t="Include" />
-              <e p="QuestState.cs" t="Include" />
-            </e>
+            <e p="PlayerSpawnLocation.cs" t="Include" />
+            <e p="Quest.cs" t="Include" />
             <e p="Quiz" t="Include">
               <e p="Question.cs" t="Include" />
               <e p="Quiz.cs" t="Include" />
             </e>
+            <e p="Spawn.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -187,10 +179,8 @@
           <e p="LaunchConfetti.cs" t="Include" />
           <e p="NPC" t="Include">
             <e p="DanceRandom.cs" t="Include" />
-            <e p="hasQuest.cs" t="Include" />
             <e p="NPCWalk.cs" t="Include" />
             <e p="Teacher" t="Include">
-              <e p="setName.cs" t="Include" />
               <e p="ShirtFollowTeacherAnimator.cs" t="Include" />
               <e p="Talking.cs" t="Include" />
               <e p="TeacherWalk.cs" t="Include" />
@@ -206,11 +196,6 @@
           </e>
           <e p="ResolutionManager.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
-          <e p="UI" t="Include">
-            <e p="LoadQuest.cs" t="Include" />
-            <e p="QuestButton.cs" t="Include" />
-            <e p="QuestManager.cs" t="Include" />
-          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
@@ -241,10 +226,10 @@
           </e>
         </e>
       </e>
+      <e p="Shadowbeta2.sln" t="IncludeFlat" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Shadowbeta2.sln" t="IncludeFlat" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

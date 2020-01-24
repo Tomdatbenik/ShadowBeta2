@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 public class MoveToOtherScene : MonoBehaviour
 {
@@ -13,7 +11,6 @@ public class MoveToOtherScene : MonoBehaviour
     public bool isExit;
     public bool hasNoCollider;
     public Quest quest;
-    public int sceneIndex;
 
     public PlayerSpawnLocation spawnLocation;
 
@@ -124,11 +121,9 @@ public class MoveToOtherScene : MonoBehaviour
 
     private void goToScene()
     {
-        if (!spawnIsNull())
-        {
+        if(!spawnIsNull())
             spawnLocation.spawn = Spawn;
-        }
-        SceneManager.LoadScene(sceneIndex); 
+        SceneManager.LoadScene(transportScene.name);
     }
 
     private bool spawnIsNull()

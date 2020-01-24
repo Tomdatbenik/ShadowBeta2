@@ -561,11 +561,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1251806723300101784}
     m_Modifications:
-    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogueTrigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -625,6 +620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}

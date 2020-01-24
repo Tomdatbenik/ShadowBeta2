@@ -8,13 +8,13 @@ public class ExecuteCode : MonoBehaviour
 {
     public GameObject[] answerBoxes;
     public Object loadScene;
-    public int loadIndex;
 
     private int enteredAllAnswers = 0;
     private int wrongAnswers = 0;
 
     public PlayerSpawnLocation playerSpawnLocation;
     public Spawn spawn;
+    public Quest quest;
 
 
     // Start is called before the first frame update
@@ -25,7 +25,6 @@ public class ExecuteCode : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log("clicked on button");
         foreach (GameObject answerBox in answerBoxes)
         {
             if (answerBox.transform.childCount != 0)
@@ -51,7 +50,8 @@ public class ExecuteCode : MonoBehaviour
             Debug.Log("wrong answers: " + wrongAnswers);
             if (wrongAnswers == 0)
             {
-                SceneManager.LoadScene(loadIndex);
+                quest.QuestState = QuestState.COMPLETED;
+                SceneManager.LoadScene(loadScene.name);
             }
         }
         else

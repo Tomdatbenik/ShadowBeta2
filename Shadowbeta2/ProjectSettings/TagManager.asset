@@ -20,7 +20,7 @@ TagManager:
   - Buildings
   - Street
   - Characters
-  - 
+  - Dialogue
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Dialogue
+    uniqueID: 1772418593
     locked: 0
   - name: Skybox
     uniqueID: 3504871875
