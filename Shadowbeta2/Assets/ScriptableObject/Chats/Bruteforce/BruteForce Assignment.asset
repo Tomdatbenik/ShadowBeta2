@@ -25,4 +25,4 @@ MonoBehaviour:
     12345, qwerty, password or safe password.'
   - I hope you will learn something about hacking passwords with the help of brute
     forcing it!
-  assign: 0
+  assign: 1
