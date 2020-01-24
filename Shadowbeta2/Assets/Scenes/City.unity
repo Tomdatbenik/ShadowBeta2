@@ -2460,7 +2460,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -21720,7 +21720,18 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: MaxLeftX
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead,
+        type: 3}
+      propertyPath: MaxRightX
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1251806723300101782, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8fef732e1112a94c81d9233f3af9ead, type: 3}
 --- !u!1 &1969529680
 GameObject:
