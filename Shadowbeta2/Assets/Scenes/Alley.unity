@@ -763,6 +763,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 28591233}
     m_Modifications:
+    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2719658472547609366, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -818,10 +823,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2513691171669963996, guid: 6eaa410862b1128458790f98164d91bd,
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
-      propertyPath: m_Name
-      value: DialogueTrigger
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7916650406522529920, guid: 6eaa410862b1128458790f98164d91bd,
         type: 3}
@@ -843,16 +853,6 @@ PrefabInstance:
         type: 3}
       propertyPath: canTalk
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279241480968741809, guid: 6eaa410862b1128458790f98164d91bd,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa410862b1128458790f98164d91bd, type: 3}
@@ -950,6 +950,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d6623e6a2a829cb4e8b1fa6e2d2378f0,
         type: 2}
+    - target: {fileID: 4873111860085075376, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
+        type: 3}
+      propertyPath: transportScene
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4873111860085075383, guid: 42098b2b4cf3f2d4493c5ead49ba1591,
         type: 3}
       propertyPath: m_Offset.y
@@ -1348,7 +1353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426175103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0229874, y: 1.4057636, z: -183.14844}
+  m_LocalPosition: {x: -3.8336134, y: 1.4057636, z: -183.14844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

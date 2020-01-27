@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MoveToOtherScene : MonoBehaviour
 {
-    public Object transportScene;
+    public int transportScene;
     public SpriteRenderer buttonPrompt;
     public Animator animator;
     public bool isExit;
     public bool hasNoCollider;
     public Quest quest;
+    public int index;
 
     public PlayerSpawnLocation spawnLocation;
 
@@ -123,7 +124,7 @@ public class MoveToOtherScene : MonoBehaviour
     {
         if(!spawnIsNull())
             spawnLocation.spawn = Spawn;
-        SceneManager.LoadScene(transportScene.name);
+        SceneManager.LoadScene(transportScene);
     }
 
     private bool spawnIsNull()

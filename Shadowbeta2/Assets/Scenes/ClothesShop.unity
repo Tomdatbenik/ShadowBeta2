@@ -207,12 +207,6 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 7384931229436250916, guid: de4f60d3c08918c418b1742fe84d3355,
-        type: 3}
-      propertyPath: DefaultSpawnLocation
-      value: 
-      objectReference: {fileID: 11400000, guid: 932ced7adb7b7c34fbee1f3c2a952b48,
-        type: 2}
     - target: {fileID: 7055100152434869755, guid: de4f60d3c08918c418b1742fe84d3355,
         type: 3}
       propertyPath: m_Offset.y
@@ -223,6 +217,12 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 3.309165
       objectReference: {fileID: 0}
+    - target: {fileID: 7384931229436250916, guid: de4f60d3c08918c418b1742fe84d3355,
+        type: 3}
+      propertyPath: DefaultSpawnLocation
+      value: 
+      objectReference: {fileID: 11400000, guid: 932ced7adb7b7c34fbee1f3c2a952b48,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de4f60d3c08918c418b1742fe84d3355, type: 3}
 --- !u!4 &99937866 stripped
@@ -810,7 +810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706517351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8552513, y: 2.3531117, z: -0.5}
+  m_LocalPosition: {x: -9.2, y: 2.3531117, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1697257856}
@@ -918,12 +918,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da6bfc35475fda4b9978b7421bb47dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transportScene: {fileID: 102900000, guid: c1daf5968ceef7146920c57d443b592c, type: 3}
+  transportScene: 8
   buttonPrompt: {fileID: 1251143137}
   animator: {fileID: 1251143136}
   isExit: 0
   hasNoCollider: 0
   quest: {fileID: 0}
+  index: 0
   spawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d, type: 2}
   Spawn: {fileID: 11400000, guid: a5313f1b9fa13f1488cc55e91a9db1bd, type: 2}
 --- !u!61 &711547496
@@ -1948,12 +1949,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da6bfc35475fda4b9978b7421bb47dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transportScene: {fileID: 102900000, guid: 9e0a6264f09130849954816b1142cd95, type: 3}
+  transportScene: 1
   buttonPrompt: {fileID: 1251143137}
   animator: {fileID: 1251143136}
   isExit: 0
   hasNoCollider: 0
   quest: {fileID: 0}
+  index: 0
   spawnLocation: {fileID: 11400000, guid: da3036bb8caba4c4d92cb1e5b14fac3d, type: 2}
   Spawn: {fileID: 11400000, guid: a5313f1b9fa13f1488cc55e91a9db1bd, type: 2}
 --- !u!61 &1694825647
